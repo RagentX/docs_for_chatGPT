@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Привязка мобильного устройства к учетной записи пользователя</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Привязка мобильного устройства к учетной записи пользователя</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="admin.htm">Администрирование</a> &gt; <a href="users.htm">Пользователи</a> &gt; <a href="users_manage.htm">Управление пользователями</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Привязка мобильного устройства к учетной записи пользователя</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="users_yandex.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="users_manage.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="users_android_unblock.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <p id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections">Show/Hide Hidden Text</a></p>
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Если константа <a href="andriod_integration.htm#android.deviceuserlink.use" class="topiclink">Android.DeviceUserLink.Use</a> включена, то авторизоваться на мобильном устройстве могут только пользователи, для которых осуществлена привязка учетной записи к устройству.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Привязка осуществляется при помощи добавления MAC-адреса устройства в список в учетной записи пользователя. Одна учетная запись может быть привязана к одному или более устройствам или не привязана ни к одному устройству.</span></p>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_Greytoggle"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть список" title="Кликните чтобы развернуть или свернуть список" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть список" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Далее на этой странице</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#216;</span><span class="f_Маркированныйузкий2"><a href="users_android_bind.htm#link_add" class="topiclink">Добавление связи пользователя и устройства</a></span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#216;</span><span class="f_Маркированныйузкий2"><a href="users_android_bind.htm#link_change" class="topiclink">Изменение устройства, связанного с пользователем</a></span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#216;</span><span class="f_Маркированныйузкий2"><a href="users_android_bind.htm#link_delete" class="topiclink">Удаление связи пользователя с устройством</a></span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_Normal">&nbsp;</p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="link_add" class="hmanchor"></a><span class="f_heading5">Добавление связи пользователя и устройства</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы привязать учетную запись пользователя к устройству:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в модуль <a href="users_list.htm" class="topiclink">Пользователи</a>. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Выберите запись о нужном пользователе и нажмите кнопку </span><span class="f_Кнопка">Изменить</span><span class="f_ListNumber"> или выполните двойной клик левой клавишей мыши на выбранной строке. Откроется форма <a href="users_form_user.htm" class="topiclink">Пользователь</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Активируйте вкладку </span><span class="f_Кнопка">Дополнительно</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">Добавить</span><span class="f_ListNumber">, расположенную под списком <a href="users_form_user.htm#devices_list" class="topiclink">привязанных к данной учетной записи MAC-адресов устройств</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Откроется окно добавления MAC-адреса. Введите значение MAC-адреса устройства и нажмите </span><span class="f_Кнопка">Сохранить</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">Данный адрес будет добавлен в список.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:2.7917in;height:1.7708in" href="form_users_android_bind.png"><img id="TOGGLE0186A2" class="image-toggle" alt="form_users_android_bind_zoom50" style="border:none;width:2.7917in;height:1.7708in" src="form_users_android_bind_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:1.4688in;height:0.5208in" href="form_users_android_bind_add.png"><img id="TOGGLE0186A3" class="image-toggle" alt="form_users_android_bind_add_zoom50" style="border:none;width:1.4688in;height:0.5208in" src="form_users_android_bind_add_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="link_change" class="hmanchor"></a><span class="f_heading5">Изменение устройства, связанного с пользователем</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы изменить MAC-адрес устройства, привязанного к учетной записи пользователя:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в модуль <a href="users_list.htm" class="topiclink">Пользователи</a>. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Выберите запись о нужном пользователе и нажмите кнопку </span><span class="f_Кнопка">Изменить</span><span class="f_ListNumber"> или выполните двойной клик левой клавишей мыши на выбранной строке. Откроется &nbsp;форма <a href="users_form_user.htm" class="topiclink">Пользователь</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Активируйте вкладку </span><span class="f_ListNumber"><a href="users_form_user.htm#user_form_tab_additional" class="topiclink">Дополнительно</a></span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">Изменить</span><span class="f_ListNumber">, расположенную под списком привязанных к данной учетной записи MAC-адресов устройств.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">В открывшемся окне измените значение MAC-адреса. Затем нажмите кнопку </span><span class="f_Кнопка">Сохранить</span><span class="f_ListNumber">.</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="link_delete" class="hmanchor"></a><span class="f_heading5">Удаление связи пользователя с устройством</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в модуль <a href="users_list.htm" class="topiclink">Пользователи</a>. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Выберите запись о нужном пользователе и нажмите кнопку </span><span class="f_Кнопка">Изменить</span><span class="f_ListNumber"> или выполните двойной клик левой клавишей мыши на выбранной строке. Откроется &nbsp;форма <a href="users_form_user.htm" class="topiclink">Пользователь</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Активируйте вкладку </span><span class="f_ListNumber"><a href="users_form_user.htm#user_form_tab_additional" class="topiclink">Дополнительно</a></span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">Удалить</span><span class="f_ListNumber">, расположенную под списком привязанных к данной учетной записи MAC-адресов устройств.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:1.8958in;height:0.7500in" href="form_users_android_bind_delete.png"><img id="TOGGLE0186A4" class="image-toggle" alt="form_users_android_bind_delete_zoom50" style="border:none;width:1.8958in;height:0.7500in" src="form_users_android_bind_delete_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','form_users_android_bind_zoom50.png','hm.src1','form_users_android_bind.png');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','form_users_android_bind_add_zoom50.png','hm.src1','form_users_android_bind_add.png');
+HMInitToggle('TOGGLE0186A4','hm.type','picture','hm.state','0','hm.src0','form_users_android_bind_delete_zoom50.png','hm.src1','form_users_android_bind_delete.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

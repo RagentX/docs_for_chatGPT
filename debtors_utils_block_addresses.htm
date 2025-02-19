@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Блокировка адресов</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Блокировка адресов</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="debtors.htm">Список должников</a> &gt; <a href="debtors_loaddata.htm">Применение утилит загрузки данных</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Блокировка адресов</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtors_utils_block_phones.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="debtors_loaddata.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtors_loadhistory.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <p id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections">Show/Hide Hidden Text</a></p>
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Утилита блокировки адресов осуществляет блокировку адресов по списку, переданному в Excel-файле. Сначала осуществляется проверка возможности осуществления данной процедуры. Затем осуществляется блокировка в соответствии с записями из файла, прошедшими проверку. Далее для заблокированных адресов осуществляется перенос истории контактов.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Утилита доступна только тем пользователям, в роли которых доступ № 640 DEBT_LIST_BLOCK_</span><span class="f_In_Table">ADDRESS</span><span class="f_BodyText"> имеет значение TRUE.</span></p>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_Greytoggle"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть список" title="Кликните чтобы развернуть или свернуть список" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть список" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Далее на этой странице</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#file_format" class="topiclink">Формат файла, содержащего список для блокировки</a>:</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#file_fields" class="topiclink">Список полей файла для загрузки</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#file_fields_required" class="topiclink">Обязательность заполнения полей таблицы</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#operation" class="topiclink">Порядок действий для вызова утилиты</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#check" class="topiclink">Проверка возможности осуществления блокировки</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#blocking" class="topiclink">Выполнение блокировки</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="debtors_utils_block_addresses.htm#move_history" class="topiclink">Перенос истории контактов по заблокированному номеру</a>.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_Normal">&nbsp;</p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="file_format" class="hmanchor"></a><span class="f_heading5">Формат файла, содержащего список для блокировки</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для выбора доступен файл только в формате Excel. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Первая строка файла должна содержать &quot;шапку&quot;. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Проверка списка адресов осуществляется, начиная со второй строки.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="file_fields" class="hmanchor"></a><span class="f_heading6">Список полей файла для загрузки</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">ID адреса</span><span class="f_ListBullet2">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Причина блокировки</span><span class="f_ListBullet2"> (указывается код термина по словарю № 314 &quot;Причина блокировки адреса&quot;);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">ID адреса для переноса истории</span><span class="f_ListBullet2">.</span></p><p class="p_heading6" style="page-break-after: avoid;"><a name="file_fields_required" class="hmanchor"></a><span class="f_heading6">Обязательность заполнения полей таблицы</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В файле обязательно должна быть заполнена колонка </span><span class="f_Кнопка">ID адреса</span><span class="f_BodyText">.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Поле </span><span class="f_Кнопка">Причина блокировки</span><span class="f_BodyText"> является обязательным для заполнения, если включена константа <a href="constants_constlist.htm#address.block.reason.mandatory" class="topiclink">Address.Block.Reason.Mandatory</a>.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="operation" class="hmanchor"></a><span class="f_heading5">Порядок действий</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы осуществить блокировку адресов:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в модуль </span><span class="f_Кнопка">Список должников</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите на кнопку <img alt="btn_utils_download" style="margin:0;width:0.4063in;height:0.2604in;border:none" src="btn_utils_download.png"/> </span><span class="f_Кнопка">Утилиты загрузки</span><span class="f_ListNumber">. В открывшемся списке выберите пункт </span><span class="f_Кнопка">Блокировка адресов</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Откроется стандартное окно для выбора файла. Выберите файл, затем нажмите </span><span class="f_Кнопка">Открыть</span><span class="f_ListNumber"> (</span><span class="f_Кнопка">Open</span><span class="f_ListNumber">).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Откроется окно предварительного просмотра. Нажмите кнопку </span><span class="f_Кнопка">Проверить</span><span class="f_ListNumber"> (остальные кнопки в данный момент неактивны). Будет осуществлена <a href="debtors_utils_block_addresses.htm#check" class="topiclink">Проверка возможности осуществления блокировки</a>. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">По окончании проверки в таблице будут заполнены поля &quot;Возможность блокировки&quot; и &quot;Причина невозможности блокировки&quot;. Вы можете сохранить файл с ошибочными записями, для этого нажмите кнопку </span><span class="f_Кнопка">Excel</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">Загрузка в БД</span><span class="f_ListNumber">. Будет <a href="debtors_utils_block_addresses.htm#blocking" class="topiclink">выполнена блокировка</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">7.</span><span class="f_ListNumber">Если заполнено поле </span><span class="f_Кнопка">ID телефона для переноса истории</span><span class="f_ListNumber">, будет осуществлен <a href="debtors_utils_block_addresses.htm#move_history" class="topiclink">Перенос истории контактов по заблокированному номеру</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">8.</span><span class="f_ListNumber">По окончании процесса будет показано информационное сообщение. Нажмите </span><span class="f_Кнопка">ОК</span><span class="f_ListNumber">.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:5.0417in;height:2.0625in" href="form_debtlist_block_addresses.png"><img id="TOGGLE0186A2" class="image-toggle" alt="form_debtlist_block_addresses_zoom50" style="border:none;width:5.0417in;height:2.0625in" src="form_debtlist_block_addresses_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="check" class="hmanchor"></a><span class="f_heading5">Проверка возможности осуществления блокировки</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если формат файла не совпадает с требуемым, то выводить пользователю сообщение:</span></p>
+<p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">&quot;Файл не соответствует требуемому формату&quot;. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если формат файла верный, то проводится проверка данных в файле: </span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Выполняется проверка наличия в таблице address адреса с addresse.id из столбца &quot;ID адреса&quot;. Если адрес не найден, то блокировка не производится с причиной:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">&quot;Не найден указанный адрес&quot;</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Если адрес найден, то определяется его статус блокировки, если адрес уже заблокирован, то блокировка не производится с причиной:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">&quot;Адрес уже заблокирован&quot;</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Выполняется проверка наличия термина в словаре &quot;Причина блокировки адреса&quot;, указанного в столбце &quot;Причина блокировки&quot;. Если код не найден (или он пустой) и включена константа Address.Block.Reason.Mandatory, то блокировка не производится с причиной:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">&quot;Некорректная причина блокировки&quot;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">По окончании проверки в таблице заполняются поля:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Возможность блокировки</span><span class="f_ListBullet2"> — значения &quot;Да&quot; или &quot;Нет&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Причина невозможности блокировки</span><span class="f_ListBullet2"> — для записей, имеющих значение &quot;Нет&quot; в предыдущем поле указывается причина.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:5.0417in;height:2.0625in" href="form_debtlist_block_addresses_checked.png"><img id="TOGGLE0186A3" class="image-toggle" alt="form_debtlist_block_addresses_checked_zoom50" style="border:none;width:5.0417in;height:2.0625in" src="form_debtlist_block_addresses_checked_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="blocking" class="hmanchor"></a><span class="f_heading5">Выполнение блокировки</span></p>
+<p class="p_BodyText"><span class="f_ListBullet2">Блокировка выполняется только для записей, имеющих в поле </span><span class="f_Кнопка">Возможность блокировки</span><span class="f_ListBullet2"> значение &quot;Да&quot;.</span></p>
+<p class="p_BodyText"><span class="f_ListBullet2">Если в списке </span><span class="f_BodyText">были найдены строки, которые не подлежат загрузке, то пользователю выводится сообщение:</span></p>
+<p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">&quot;Сформировать файл ошибочных записей?&quot;:</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В зависимости от выбора пользователя:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выбирает &quot;Нет&quot;, то осуществляется блокировка адресов, которые прошли проверку;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выбирает &quot;Да&quot;, то осуществляется блокировка адресов и формируется Excel-файл, содержащий информацию об адресах, которые не были заблокированы и причину невозможности блокировки.</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="move_history" class="hmanchor"></a><span class="f_heading5">Перенос истории контактов по заблокированному адресу</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если блокировка для адреса была выполнена и в поле &quot;ID адреса для переноса истории&quot; указан идентификатор адреса, который найден в системе, то выполняются следующие действия: </span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Обновляется привязка контактов по блокируемому адресу к новому адресу, который указан в поле &quot;ID адреса для переноса истории&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Обновляется привязка писем на блокируемый адрес к новому адресу.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Обновляется привязка заявок на письма по блокируемому адресу к новому адресу.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Для нового адреса устанавливается статус блокируемого адреса. </span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','form_debtlist_block_addresses_zoom50.png','hm.src1','form_debtlist_block_addresses.png');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','form_debtlist_block_addresses_checked_zoom50.png','hm.src1','form_debtlist_block_addresses_checked.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

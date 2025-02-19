@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Формирование лога с данными о работе утилиты</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Формирование лога с данными о работе утилиты</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="debtors.htm">Список должников</a> &gt; <a href="debtors_loaddata.htm">Применение утилит загрузки данных</a> &gt; <a href="debtstatus.htm">Утилита изменения статуса долга</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Формирование лога с данными о работе утилиты</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtstatus_cancel.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="debtstatus.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtstatus_log_loadmessages.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Если константа <a href="debtstatus_setconst.htm#loadstatusdebugmode" class="topiclink">LoadDataDebugMode</a> имеет значение &quot;Истина&quot;, то в текущей директории утилиты автоматически создается текстовый файл load_status &lt;дата выполнения&gt;.log (например, load_status 01042011.log) с данными о функционировании утилиты за текущие сутки. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Каждое сообщение в файле начинается со сведений о дате и времени формирования сообщения, например: 01.04.2011 12:29:48.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При загрузке утилиты load_status в файле формируются два сообщения: &quot;FormShow. Версия-&lt;номер версии&gt;&quot; и &quot;FStart. Возврат в исходное состояние&quot;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Перед открытием файла MS Excel в файле формируется сообщение: &quot;buOpenClick. Старт открытия файла&quot;. При успешном открытии файла MS Excel в файле формируется сообщение: &quot;buOpenClick. Файл-директория и имя файла успешно открыт&quot;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В случае несоответствия количества заполненных столбцов в открытом файле MS Excel <a href="debtstatus_preparedata.htm" class="topiclink">формату</a>, а также при наличии в исходном файле MS Excel ошибочной ячейки, не позволяющей открыть файл, в файле формируются соответствующие сообщения.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В начале проверки данных в файле формируется сообщение: &quot;buCheckClick. Проверка данных&quot;. В зависимости от результата проверки в логическом файле формируется одно из сообщений: </span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;Данные полностью соответствуют формату загрузки&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;Загрузка невозможна, ни одна запись не соответствует формату загрузки&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;Можно загрузить записей &lt;количество корректных записей&gt;, номер первой ошибочной записи &lt;номер записи&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">В процессе проверки данных в файле формируются сообщения о создании, наполнении и корректировке временных таблиц.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Перед окраской фона ячеек таблицы данных в файле формируется сообщение: &quot;CheckData. Окраска ячеек в строках grid&quot;. По окончании окраски фона ячеек в логическом файле формируется сообщение: &quot;CheckData. Результаты проверки данных: всего записей &lt;общее количество записей&gt;, из них ошибочных &lt;количество ошибочных записей&gt;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если константа<a href="debtstatus_setconst.htm#loadstatusbulkinsert" class="topiclink"> LoadStatusBulkInsert</a> имеет значение &quot;Ложь&quot;, то для каждой проверяемой записи в логическом файле формируется сообщение: &quot;CheckData. Старт проверки данных записи &lt;номер записи&gt;&quot; и, при наличии ошибок, отдельное сообщение по каждой выявленной ошибке. Если для проверяемой записи найден id долга, в логическом файле формируется соответствующее сообщение.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В начале загрузки данных в логическом файле формируется сообщение: &quot;buSaveClick. Загрузка данных&quot;. В отсутствии изменений данных пользователем повторная проверка не осуществляется, в логическом файле формируется сообщение: &quot;buSaveClick. Данные в ячейках таблицы не изменялись, повторная проверка отменена&quot;. В отсутствии записей без критических ошибок в логическом файле формируется сообщение: &quot;buSaveClick. Загрузка данных отменена из-за отсутствия записей, которые могут быть загружены в БД&quot;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При наличии в таблице данных и корректных, и ошибочных записей в случае решения пользователя сформировать файл ошибочных записей в логическом файле формируется сообщение: &quot;buSaveClick. Имеются ошибочные записи (&lt;количество ошибочных записей&gt;). Старт формирования файла ошибок&quot;, а затем сообщение: &quot;buSaveClick. Сформирован файл ошибок директория и имя файла&quot;. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">При наличии в таблице данных корректных дублированных записей (с одинаковыми ID долга) в логическом файле формируется сообщение: &quot;buSaveClick. Имеются записи с одинаковыми id debt. Дублированные записи (&lt;количество дублированных записей&gt;) не учитываются при загрузке в БД&quot;. Если булевская константа LoadStatusBulkInsert имеет значение &quot;Ложь&quot;, то в логическом файле дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;buSaveClick. Дополнительные данные о дублировании записей:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждой дублированной записи вида &quot;запись №&lt;номер записи&gt;, id debt = &lt;ID долга&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При наличии записей с некритическими ошибками и значении &quot;Истина&quot; булевской константы LoadStatusBulkInsert в логическом файле формируется сообщение: &quot;buSaveClick. Имеются записи (&lt;количество записей&gt;) с несовпадающим ФИО&quot;. В зависимости от решения пользователя в логическом файле формируется одно из сообщений:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span>&quot;<span class="f_ListBullet2">buSaveClick. Пользователь отказался от загрузки данных по записям с несовпадающим ФИО&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;buSaveClick. Пользователь согласен загружать данные по записям с несовпадающим ФИО&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При наличии записей с некритическими ошибками и значении &quot;Ложь&quot; булевской константы LoadStatusBulkInsert в зависимости от решений пользователя по каждой записи с несовпадающим ФИО в логическом файле формируется одно из сообщений:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;buSaveClick. Сообщение &quot;Запись №' &lt;номер записи&gt;, должник = &lt;ФИО должника&gt;, банк = &lt;название банка&gt;, портфель = &lt;название портфеля&gt;, договор = &lt;номер договора&gt;, л/с = &lt;номер счета&gt;, ID клиента = &lt;ID в системе клиента&gt;. В базе найден должник = &lt;ФИО должника&gt;, ID долга = &lt;ID долга&gt;&quot;. Пользователь отказался от загрузки данных по записи с несовпадающим ФИО&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">&quot;buSaveClick. Сообщение &quot;Запись №' &lt;номер записи&gt;, должник = &lt;ФИО должника&gt;, банк = &lt;название банка&gt;, портфель = &lt;название портфеля&gt;, договор = &lt;номер договора&gt;, л/с = &lt;номер счета&gt;, ID клиента = &lt;ID в системе клиента&gt;. В базе найден должник = &lt;ФИО должника&gt;, ID долга = &lt;ID долга&quot;. Пользователь согласен загружать данные по записи с несовпадающим ФИО&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">Состав и структура сообщений, формируемых в файле в процессе загрузки, описаны в разделе </span><a href="debtstatus_log_loadmessages.htm" class="topiclink">Состав и структура сообщений, формируемых в логическом файле в процессе загрузки</a>.</p>
+<p class="p_BodyText"><span class="f_BodyText">По окончании загрузки данных в логическом файле формируется сообщение: &quot;buSaveClick. Загрузка окончена. Успешно загружено &lt;количество записей&gt; записей&quot;.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

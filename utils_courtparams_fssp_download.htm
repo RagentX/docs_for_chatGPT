@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Загрузка ФССП из Excel-файла</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Загрузка ФССП из Excel-файла</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="utils.htm">Утилиты</a> &gt; <a href="utils_courtparams.htm">Настройка судов и ФССП</a> &gt; <a href="utils_courtparams_fssp.htm">ФССП и судебные приставы</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Загрузка ФССП из Excel-файла</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="utils_courtparams_fssp.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="utils_courtparams_fssp.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="utils_courtparams_fssp_oper.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Условия доступности</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Кнопка <img alt="btn_utils_1" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_utils_1.png"/> </span><span class="f_Кнопка">Загрузка ФССП</span><span class="f_BodyText"> видна на вкладке <a href="utils_courtparams_fssp_view.htm" class="topiclink">ФССП и приставы</a> и доступна пользователям, в роли которых доступ № 663 LAW_JUDGE_SET_LAW_COURT_LOAD имеет значение TRUE.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Шаблон файла загрузки ФССП</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Первая строка в файле для загрузки - шапка с названиями столбцов, со второй строки начинаются данные для загрузки в БД. В таблице ниже указан порядок столбцов в шаблоне.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:0.2292in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">№</span></p>
+</th>
+<th style="vertical-align:top; width:2.7188in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название столбца в шаблоне</span></p>
+</th>
+<th style="vertical-align:top; width:4.1771in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Соответствующее поле в БД</span></p>
+</th>
+<th style="vertical-align:top; width:4.9375in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Комментарий</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Название</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.name nvarchar(128)/ varchar2(128)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Название ФССП. Обязательно для заполнения</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">2</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.addreess nvarchar(128)/ varchar2(128)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес ФССП</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">3</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Район</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.district nvarchar(64)/ varchar2(64)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Район ФССП</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">4</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.phone nvarchar(64)/ varchar2(64)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон ФССП</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">5</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ИНН</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.inn nvarchar(16)/ varchar2(16)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ИНН ФССП</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">6</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">КПП</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.kpp nvarchar(16)/ varchar2(16)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">КПП ФССП</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.2292in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">7</span></p>
+</td>
+<td style="vertical-align:top; width:2.7188in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Комментарий</span></p>
+</td>
+<td style="vertical-align:top; width:4.1771in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">law_court.dsc nvarchar(512)/ varchar2(512)</span></p>
+</td>
+<td style="vertical-align:top; width:4.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Комментарий</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. Если включен функционал <a href="utils_courtparams_fssp_address_as_object.htm" class="topiclink">Хранение адреса ФССП как отдельной сущности БД</a>, то адрес ФССП будет загружаться как отдельная сущность БД. </span><span class="f_Emphasis">Для загружаемого адреса ФССП будет создаваться отдельная запись в таблице address и добавляться связь с ФССП через obj_address_link</span><span class="f_BodyText">.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Порядок действий при загрузке ФССП</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы осуществить загрузку судов, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в модуль <a href="utils_courtparams.htm" class="topiclink">Настройка судов и ФССП</a>. Активируйте вкладку <a href="utils_courtparams_fssp_view.htm" class="topiclink">ФССП и приставы</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку <img alt="btn_utils_1" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_utils_1.png"/> </span><span class="f_Кнопка">Загрузка ФССП</span><span class="f_ListNumber">. Откроется стандартное окно для выбора файла.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Выберите файл и нажмите кнопку </span><span class="f_Кнопка">Открыть</span><span class="f_ListNumber"> (</span><span class="f_Кнопка">Open</span><span class="f_ListNumber">).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Будет осуществлена проверка соответствия выбранного файла шаблону загрузки ФССП. При этом проверяется количество столбцов и наличие данных в файле:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">в случае несовпадения формата файла с шаблоном пользователю выводится сообщение следующего вида:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Файл &lt;NAME&gt; не соответствует требуемому формату. Количество столбцов не совпадает с шаблоном,</span></p>
+<p class="p_BodyText"><span class="f_BodyText">где &lt;NAME&gt; — полное имя файла;</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">в случае отсутствия в файле данных для загрузки пользователю выводится сообщение:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Список ФССП для загрузки пуст</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Если выбранный файл не соответствует шаблону, его загрузка не осуществляется, действие прекращается.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">Затем открывается окно </span><span class="f_Кнопка">Предварительный просмотр</span><span class="f_ListNumber"> с кнопками:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Загрузка в БД</span><span class="f_ListBullet2"> — изначально неактивна (для загрузки судов в БД);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Проверить</span><span class="f_ListBullet2"> — активна (для проверки записей перед загрузкой в БД);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Excel</span><span class="f_ListBullet2"> — изначально неактивна (для сохранения excel-файла с ошибочными записями).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">7.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">Проверить</span><span class="f_ListNumber">. Будет осуществлен поиск ошибочных записей в загружаемом файле.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">8.</span><span class="f_ListNumber">Если ошибочных записей нет, то появится сообщение:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Проверка возможности загрузки судов прошла успешно.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Нажмите </span><span class="f_Кнопка">ОК</span><span class="f_BodyText">. В форме </span><span class="f_Кнопка">Предварительный просмотр</span><span class="f_BodyText"> станет доступна кнопка </span><span class="f_Кнопка">Загрузка в БД</span><span class="f_BodyText">. Нажмите на нее, и загрузка осуществится. По ее результату появится сообщение:</span></p>
+<p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Записи, прошедшие проверку успешно загружены в БД.</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">9.</span><span class="f_ListNumber">Если в результате проверки найдены ошибочные записи, то будет показано сообщение:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Найдены строки, которые не подлежат загрузке: подробнее см. столбец &quot;Причина невозможности загрузки&quot;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Нажмите </span><span class="f_Кнопка">ОК</span><span class="f_BodyText">. После этого в форме </span><span class="f_Кнопка">Предварительный просмотр</span><span class="f_BodyText"> станут доступны кнопки </span><span class="f_Кнопка">Загрузка в БД</span><span class="f_BodyText"> и </span><span class="f_Кнопка">Excel</span><span class="f_BodyText">. При этом в таблице формы будут добавлены две колонки:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Возможность загрузки — в столбце отображается &quot;Да&quot;, если запись не является ошибочной, иначе — &quot;Нет&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Причина невозможности загрузки — в столбце отображается соответствующая причина только для тех записей, для которых в столбце &quot;Возможность загрузки&quot; выводится &quot;Нет&quot; (см. <a href="utils_courtparams_fssp_download.htm#errors" class="topiclink">список ошибок при загрузке ФССП далее</a>).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">10.</span><span class="f_ListNumber">Нажмите кнопку &quot;Загрузка в БД&quot;. При этом появится сообщение:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none; margin: 0 0 0 0.4688in;"><span class="f_quote_my">Загружены будут только записи, прошедшие проверку. Сформировать файл ошибочных записей?</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если вы хотите сформировать файл ошибочных записей, нажмите Yes, иначе нажмите No.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="errors" class="hmanchor"></a><span class="f_heading5">Ошибочные записи при загрузке ФССП</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:3.5938in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Причина</span></p>
+</th>
+<th style="vertical-align:top; width:2.7813in; background-color:#C0C0C0; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Комментарий</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:3.5938in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Не указано название загружаемого ФССП</span></p>
+</td>
+<td style="vertical-align:top; width:2.7813in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">В случае если для записи в файле не заполнен столбец 1</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p_BodyText"><div style="margin:0;width:3.4792in"><a class="imagetogglelink" href="form_fssp_preview_1.png"><img id="TOGGLE0186A1" class="image-toggle" alt="Предварительный просмотр" title="Предварительный просмотр" style="width:3.4792in;height:2.0625in;border:none" src="form_fssp_preview_1_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a><p style="text-align:center"><span class="f_ImageCaption">Предварительный просмотр</span></p></div></div>
+<div class="p_BodyText"><div style="margin:0;width:3.4792in"><a class="imagetogglelink" href="form_fssp_preview_2.png"><img id="TOGGLE0186A2" class="image-toggle" alt="Предварительный просмотр после проверки" title="Предварительный просмотр после проверки" style="width:3.4792in;height:2.0625in;border:none" src="form_fssp_preview_2_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a><p style="text-align:center"><span class="f_ImageCaption">Предварительный просмотр после проверки</span></p></div></div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_fssp_preview_1_zoom50.png','hm.src1','form_fssp_preview_1.png','hm.title0','Предварительный просмотр','hm.title1','Предварительный просмотр','hm.caption0','Предварительный просмотр','hm.caption1','Предварительный просмотр');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','form_fssp_preview_2_zoom50.png','hm.src1','form_fssp_preview_2.png','hm.title0','Предварительный просмотр после проверки','hm.title1','Предварительный просмотр после проверки','hm.caption0','Предварительный просмотр после проверки','hm.caption1','Предварительный просмотр после проверки');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

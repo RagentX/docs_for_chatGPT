@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Использование масок ввода для полей отчета</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Использование масок ввода для полей отчета</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="reports.htm">Отчеты</a> &gt; <a href="anyreports.htm">Произвольные отчеты</a> &gt; <a href="anyreports_fields.htm">Настройка полей отчета</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Использование масок ввода для полей отчета</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="anyreports_fields.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="anyreports_fields.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="anyreports_inputparams.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Маски ввода для текстовых полей - это возможность, задать определенные требования к текстовому полю, что способствует единообразному внесению данных различными пользователями и не позволяет внести в программу ненужную информацию.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Маски выводы данных используются для того чтобы задать формат вывода данных при выгрузке в Excel, т.е. аналогично тому, что в Excel задать форматирование ячейки в окне &quot;Формат ячейки - Число - Все форматы&quot; (открывается при нажатии Ctrl + 1).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Их применяют для того чтобы данные в отчете выглядели так как задумано при составлении отчета. Бывает так что у различных пользователей в зависимости от личных настроек, данные в отчеты отображаются иначе, например ID долга отображается как Деньги, Даты показаны как Число, и т.д. В результате пользователи вынуждены настраивать формат отображения в колонках отчета. Задавая маску вывода данных, вы будете уверены что данные будут показаны так как это требуется.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Маски ввода используют следующие символы</span></p>
+<div style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="width:100%; border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:0.8125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Символ</span></p>
+</th>
+<th style="vertical-align:top; width:6.2604in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Описание</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">@</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Значение поля выводится как текст.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">0 (ноль)</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Одно обязательное знакоместо (разряд), т.е. это место в маске формата будет заполнено цифрой из числа, которое пользователь введет в ячейку. Если для этого знакоместа нет числа, то будет выведен ноль. Например, если к числу 12 применить маску 0000, то получится 0012, а если к числу 1,3456 применить маску 0,00 - получится 1,35.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">#</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Одно необязательное знакоместо - примерно то же самое, что и ноль, но если для знакоместа нет числа, то ничего не выводится.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">?</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Аналогичен нулю, но отображает пробелы для незначащих нулей по обе стороны от разделителя. В моноширинном шрифте выравнивает числа относительно разделителя. Используется также в дробях с переменным количеством знаков.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">, (запятая)</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Задает отображение десятичного разделителя для русского Excel (для английского Excel используется точка).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&#765;(пробел)</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Между числовыми знаками (#, 0 или ?) задает разделение на группы разрядов (тысячи). </span></p>
+<p class="p_In_Table"><span class="f_In_Table">Если используется после всех числовых знаков, то каждый пробел эквивалентен делению на тысячу.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">[ ]</span></p>
+</td>
+<td style="vertical-align:top; width:6.2604in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">В квадратных скобках перед маской формата можно указать цвет шрифта. Разрешено использовать следующие цвета: черный, белый, красный, синий, зеленый, жёлтый, голубой. Либо введите [ЦВЕТn], где n – число от 1 до 56 и соответствует одному из цветов в палитре.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Примеры использования масок для задания форматов вывода данных разных типов</span></p>
+<div style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table class="MyTable" style="width:100%; border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Тип</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Формат</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Данные без форматирования</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Отображение данных</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">+7(###)###-##-##</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">4956468532</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">+7(495)646-85-32</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">+#(###)###-##-##</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">74959871264</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">+7(495)987-12-64</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата-Время</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ДД.ММ.ГГГГ</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">43636</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">20.06.2019</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата-Время</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">чч:мм:сс</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">0,448599537</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">10:45:59</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата-Время</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ДД.ММ.ГГГГ чч:мм:сс</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">43636,4486</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">20.06.2019 10:45:59</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Деньги</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table"># ##0</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1539816,90</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1 539 817</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Деньги</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table"># ##0,00</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1539816,90</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1 539 816,90</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Деньги</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table"># ##0,00 &nbsp;&quot; млн.руб.&quot;</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1539816,90</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1,54 млн.руб.</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Числа</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">#0</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">123987</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; background-color:#FFFFFF; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">123987</span></p>
+</td>
+</tr>
+<tr class="MyTable">
+<td class="MyTable" style="width:0.9271in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Текст</span></p>
+</td>
+<td class="MyTable" style="width:1.5833in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">@</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">00014165654</span></p>
+</td>
+<td class="MyTable" style="width:2.5417in; height:0.1979in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">00014165654</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

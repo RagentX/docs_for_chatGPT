@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Карточка должника</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Карточка должника</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Карточка должника</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtors_changeprocent.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="work_places.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtcard_open.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_Кнопка" style="background-color: #ebf2de;">Обновлено до 50 релиза 03.11.2020.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Карточка должника предназначена для работы с данными о должнике и его долгах.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Карточка должника открывается при <a href="debtors_add.htm" class="topiclink">создании</a> или <a href="debtors_edit.htm" class="topiclink">редактировании</a> записи о должнике в модуле &quot;Список должников&quot;, а также из других модулей системы.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Право для входа в модуль имеют только те пользователи, в роли которых доступ DEBT_CARD_VIEW установлен в значение TRUE, значение доступа DEBT_CARD_CNT больше или равно единице.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Полный перечень доступов для работы с карточкой должника приведен в таблице. </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:0.7292in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">№</span></p>
+</th>
+<th style="vertical-align:top; width:3.3333in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название доступа</span></p>
+</th>
+<th style="vertical-align:top; width:1.4896in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Значение доступа</span></p>
+</th>
+<th style="vertical-align:top; width:7.2083in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Описание доступа</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">9</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на вход в форму.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">10</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PERSON_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение основной информации о должнике: ФИО, тип, дата рождения, паспортные данные.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">11</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_FIN_ADD</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление новых долгов.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">12</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_FIN_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение финансовой информации о долгах.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">13</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EXTRA_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение дополнительной информации о должнике: место работы, образование и т.д.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">14</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DOC_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право просматривать документы и ссылки на документы.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">15</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DOC_ADD_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право добавлять документы.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">16</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PAY_REG</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право регистрации оплат.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">17</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PAY_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право отмены оплаты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">18</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PROM_REG</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право регистрации и подтверждения обещаний.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">19</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PROM_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление обещаний.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">27</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CNT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Количество РМ &quot;Карточка должника&quot;, которое можно открыть.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">50</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SET_PROBLEM_SKIP_CUSTOM</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к операции &quot;перевод должника в проблемные&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">57</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_REG_PAST_PROM</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право регистрации обещаний задним числом.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">78</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_VISIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к операции &quot;Отметить необходимость выезда&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">92</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PHONE_ADR_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение информации о телефонах и адресах.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">118</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_HISTORY</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;История&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">119</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LOG</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Лог действий&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">127</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ALL_PHONE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Возможность просматривать заблокированные номера телефонов.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">128</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_RANDVAL_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Произвольные атрибуты&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">129</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_RANDVAL_FULL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право редактировать значения на вкладке &quot;Произвольные атрибуты&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">130</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CLOSE_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право изменять финансовую информацию по закрытым и отозванным долгам.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">131</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PAY_OWNER_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право изменять коллектора, получившего платеж.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">141</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_FIN_DSC</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение полей с комментариями в финансовой информации о долгах. Работает только при выключенном доступе DEBT_CARD_FIN_EDIT.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">142</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ADDR_BLOCK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на блокировку адресов.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">143</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PHONE_ADR_DSC_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение информации о телефонах и адресах. Работает только при выключенном доступе DEBT_CARD_PHONE_ADR_EDIT.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">144</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование SMS-сообщений.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">145</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_STAGE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к операции перевод должника на другую стадию.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">155</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CONTACT_EDIT_LAST</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование последнего контакта.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">156</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CONTACT_EDIT_ALL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование комментария для всех контактов.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">168</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Поручители&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">184</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS_TEXT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование SMS-сообщений со свободным текстом.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">188</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PERSON_PROPERTY</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Имущество&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">192</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR_ADD</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление нового поручителя.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">193</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение информации о поручителе.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">194</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PERSON_PROPERTY_ADD</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление нового имущества.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">195</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PERSON_PROPERTY_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение информации об имуществе.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">220</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINK_FULL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право добавлять ссылки на документы.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">226</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_CLOSE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право видеть закрытые долги.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">229</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PAY_CONF</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право подтверждения оплат.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">230</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PAY_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение неподтвержденных платежей, а также параметров &quot;Дата учета информации&quot;, &quot;Квитанция&quot; и &quot;Комментарий&quot; для подтвержденных платежей.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">238</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PHONE_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление телефона.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">239</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование EMAIL-сообщений.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">240</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_TEXT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование EMAIL-сообщений со свободным текстом.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">241</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_OUTLOOK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на подготовку EMAIL-сообщений в Outlook.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">246</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LETTER_PRINT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право формировать письмо.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">247</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LETTER_PLAN</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право формировать заявки на письмо.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">262</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PHONE_ADR_UNBLOCK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на разблокировку телефонов и адресов.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">263</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_NO_PROSPECTS</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на перевод долгов в статус &quot;Без перспектив&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">264</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DSC_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Комментарии&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">265</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ANALYST_DSC</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право редактировать комментарий аналитика.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">267</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DOC_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право удалять документы.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">268</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINK_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право удалять ссылки на документы.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">269</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_INFO_SEARCH</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на перевод долгов в статус &quot;Поиск информации&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">280</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ALL_ADR</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Возможность просматривать удаленные и неверные адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">286</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR_DELETE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление поручителя.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">300</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_HISTORY_FULL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр вкладки &quot;История работы (полная)&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">303</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_CONTACTS</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр вкладки &quot;Контакты&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">316</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">AGENCY_RATE_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр процента вознаграждения коллектора.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">317</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">AGENCY_RATE_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение процента вознаграждения коллектора.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">342</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_MAIN_INFO_PRINT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право формировать выездной лист.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">353</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PHONE_BLOCK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на блокировку телефона.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">354</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DEBT_ATTR_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр иерархических атрибутов долга.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">359</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_CLOSE_GUARANTOR</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право видеть закрытые долги в закладке &quot;Поручители&quot;. Доступ проверяется при выключенном доступе № 226 DEBT_CARD_SHOW_CLOSE.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">365</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_OUTSOURCING</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право видеть долги, переданные на аутсорсинг.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">376</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EDIT_SCHEDULE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право редактировать статус графика платежей, если его статус отличен от Статуса &quot;Новый&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">377</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CONFIRM_SCHEDULE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право подтверждать/отклонять график платежей.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">410</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CUSTOM_STATUS</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на перевод долгов в пользовательский статус.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">411</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PROBLEM</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на перевод долгов в статус &quot;Проблемные&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">419</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS_CHANGE_SEND_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на смену даты отправки.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">420</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS_EQUAL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование одинаковых SMS-сообщений должнику.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">421</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS_WRONG_NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование SMS-сообщений на телефон в статусе &quot;Неверный номер&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">422</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SMS_ALL_TYP</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование SMS-сообщений на телефон отличный от типа &quot;Мобильный&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">423</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ADD_DEBT_ATTR_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр вкладки с дополнительной информацией по долгу.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">424</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ADD_DEBT_ATTR_FULL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование вкладки с дополнительной информацией по долгу.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">483</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">PERSON_CONTACT_VERIFICATION</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к функционалу верификации телефонов и адресов должника.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">509</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PROBLEM_ALL_REASON</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на перевод долгов в статус &quot;Проблемные&quot; с любой причиной согласно словарю № 22 &quot;Причина перевода в проблемные&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">511</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_NOTREGISTERED</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на формирование EMAIL-сообщений по адресам, не зарегистрированным в системе.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">521</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CONTACT_ADDR_BLOCK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на блокировку адресов, по которым были зарегистрированы выезды.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">522</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PREVIEW_PREFIX_LIST</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Содержит список доступных префиксов при ручном наборе номера (ALL - доступны все настроенные префиксы).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">528</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_COLOR</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к палитре изменения цвета.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">529</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_BLOCK</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на блокировку/разблокировку электронного адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">536</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CHANGE_PORTFOLIO</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение &nbsp;портфеля должника.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">549</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ADD_SCHEDULE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на создание графика платежей.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">550</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EDIT_ALL_SCHEDULE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование графика платежей в любом статусе.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">551</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SCHEDULE_EDIT_PAYMENT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование платежей графика.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">552</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SCHEDULE_ADD_PAYMENT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление платежа графику.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">553</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SCHEDULE_DEL_PAYMENT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление &nbsp;платежа по графику.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">554</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DEL_SCHEDULE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление графика платежей. (перевод в статус &quot;Расторгнут&quot;).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">556</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ACCOUNT_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование данных на &nbsp;вкладке &quot;Счета&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">594</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_RANDVAL_VIEW_DEL_VERS</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право видеть удаленные произвольные атрибуты долга, поддерживающие версионность.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">631</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_COMMUNICATION_SCHEMA_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр персональных ограничений коммуникации.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">632</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_COMMUNICATION_SCHEMA_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование персональных ограничений коммуникации.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">641</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_REQUEST_REPORT_LIST</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&quot;ALL&quot; или список</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Содержит через запятую список отображаемых отчетов, доступных по кнопке &quot;Отчеты&quot; на вкладке &quot;Долги&quot; &nbsp;(ALL – доступны все). Через запятую необходимо перечислить X из названия константы DebtCardRequestReportX, по которой соответствующий отчет доступен в РМ &quot;Карточка должника&quot;. Например, отчет виден в списке согласно настройке константы DebtCardRequestReport2. Для отображения видимости отчета согласно роли в доступ необходимо добавить значение 2.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">643</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR_DSC_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение комментария в окне Поручитель.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">644</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_ADD</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление электронного адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">645</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование электронного адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">646</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_EMAIL_DEL</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление электронного адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">651</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ALL_DEBTS_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр долгов без ограничения по структуре предприятия.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table">655</p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DISCHARGE_VIEW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр выписки по долгу.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">664</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_PROPERTY_REQUEST_REPORT_LIST</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&quot;ALL&quot; или список</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Содержит через запятую список ID произвольных отчетов, доступных по кнопке &quot;Отчеты&quot; на вкладке &quot;Имущество&quot; (ALL – доступны все).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">688</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_ADDR_OBJ_ATTR_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование дополнительных атрибутов адреса.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">689</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_CLIENT_CONCIDENCE_SHOW</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отобразить действие Совпадающие должники в контекстном меню.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">699</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DEBT_OBJ_ATTR_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование дополнительных атрибутов долга.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">700</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_GUARANTOR_OBJ_ATTR_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование дополнительных атрибутов поручителя.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">703</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_HISTORY_OWNERSHIP_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование данных на вкладке &quot;История собственности&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">799</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINKED_PERSON_ADD</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на добавление нового связанного лица.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">800</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINKED_PERSON_DELETE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на удаление нового связанного лица.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">801</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINKED_PERSON_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение информации о связанном лице (кроме комментария и контактной информации).</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">802</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINKED_PERSON_DSC_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на изменение комментария в окне &quot;Связанные лица&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">803</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_SHOW_CLOSE_LINKED_PERSON</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право видеть закрытые долги на вкладке &quot;Связанные лица&quot;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7292in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">804</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_LINKED_PERSON</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступ к вкладке &quot;Связанные лица&quot;.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Описание доступов, имеющих отношение к функционалу &quot;Акции&quot;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:0.7188in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">№</span></p>
+</th>
+<th style="vertical-align:top; width:3.3333in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название доступа</span></p>
+</th>
+<th style="vertical-align:top; width:1.4896in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Значение доступа</span></p>
+</th>
+<th style="vertical-align:top; width:7.1979in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Описание доступа</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:0.7188in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">337</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DISCOUNT_EDIT</span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на редактирование данных на вкладке Акции.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.7188in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">336</span></p>
+</td>
+<td style="vertical-align:top; width:3.3333in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DISCOUNT_VIEW </span></p>
+</td>
+<td style="vertical-align:top; width:1.4896in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Право на просмотр вкладки Акции. Если у пользователя нет данного доступа, то карточка долга, участвующего в акции, все равно <a href="debtcard_form.htm#color" class="topiclink">окрашена</a>.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Описание доступов, имеющих отношение к функционалу &quot;Планирование (Задачи)&quot;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:0.7188in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">№</span></p>
+</th>
+<th style="vertical-align:top; width:3.3542in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название доступа</span></p>
+</th>
+<th style="vertical-align:top; width:1.5104in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Значение доступа</span></p>
+</th>
+<th style="vertical-align:top; width:7.2083in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Описание доступа</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:0.7188in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">418</span></p>
+</td>
+<td style="vertical-align:top; width:3.3542in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">DEBT_CARD_DEBT_TASK</span></p>
+</td>
+<td style="vertical-align:top; width:1.5104in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">TRUE</span></p>
+</td>
+<td style="vertical-align:top; width:7.2083in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">РМ &quot;Карточка должника&quot; - доступ к вкладке &quot;Задачи&quot;.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

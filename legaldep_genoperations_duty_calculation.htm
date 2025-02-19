@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Алгоритм расчета госпошлины</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Алгоритм расчета госпошлины</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="legaldep.htm">Юридический департамент</a> &gt; Общие операции в форме &quot;Юридический департамент&quot;&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Алгоритм расчета госпошлины</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="legaldep_genoperations_yandex.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="legaldep.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="legaldep_genoperations_bank_restrictions.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <p id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections">Show/Hide Hidden Text</a></p>
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Расчет госпошлины осуществляется по-разному, в зависимости от типа дела (приказ или иск), от <a href="utils_courtparams_courts.htm#jurisdiction" class="topiclink">родовой подсудности</a> и валюты долга.</span></p>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_Greytoggle"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="Кликните, чтобы развернуть или свернуть список" title="Кликните, чтобы развернуть или свернуть список" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните, чтобы развернуть или свернуть список" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Далее на этой странице</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_claim" class="topiclink">Алгоритм расчета госпошлины для искового производства</a>:</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_claim_general_court" class="topiclink">Для судов общей юрисдикции</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_claim_arbitrate_court" class="topiclink">Для арбитражных судов</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_order" class="topiclink">Алгоритм расчета госпошлины для приказного производства</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_round" class="topiclink">Округление полученного значения пошлины</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 0.9583in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_currency" class="topiclink">Расчет госпошлины для валютных долгов</a>:</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_currency_card" class="topiclink">Порядок конвертации размера требования в основную валюту в карточке судебной работы</a>;</span></p><p class="p_Маркированныйузкий2" style="text-indent: 0; padding-left: 1.4375in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#000000;text-decoration:none;">&#167;</span><span class="f_Маркированныйузкий2"><a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_currency_list" class="topiclink">Порядок конвертации размера требования в основную валюту в модуле &quot;Юридический департамент&quot;</a>.</span></p></td>
+</tr>
+</table>
+</div>
+<hr style="height:1px; color:#000000; border-width:0; background-color:#000000;"><p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5" style="background-color: #ebf2de;">Расчет госпошлины при нулевом размере требований (информация для поддержки)</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">На всех вкладках модуля, где используется действие по расчету госпошлины, перед тем, как выполнить расчет, Система проверяет сумму размера требований (law_act.total_sum) по судебному делу:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если размер требований меньше нуля, то госпошлина не рассчитывается.</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если размер требований больше нуля, то выполняется стандартная логика.</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если размер требований равен нулю, то производится проверка значения технической константы&nbsp;<a href="constants_constlist_technical.htm#lawact.zerototalsum.calcduesum" class="topiclink">LawAct.ZeroTotalSum.CalcDueSum</a>:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet3" style="background-color: #ebf2de;">Если константа имеет значение «Истина», то расчет госпошлины разрешается по текущей логике;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet3" style="background-color: #ebf2de;">Если константа имеет значение «Ложь», то расчет госпошлины не осуществляется.</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="calc_duty_calc_claim" class="hmanchor"></a><span class="f_heading5">Алгоритм расчета госпошлины для искового производства</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="calc_duty_calc_claim_general_court" class="hmanchor"></a><span class="f_heading6">Для судов общей юрисдикции</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если родовая подсудность суда — </span><span class="f_Кнопка">Общая юрисдикция</span><span class="f_BodyText"> (словарь № 14, термин 1), то расчет осуществляется по следующим правилам:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования не более 20 000 руб., то сумма государственной пошлины составляет 4% от стоимости искового требования, но не менее 400 руб.;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 20 001 руб. до 100 000 руб., то размер пошлины составляет 800 руб. и плюс 3% от суммы, превышающей 20 000 руб.;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 100 001 рубля до &nbsp;200 000 руб., то сумма пошлины составляет 3 200 руб. плюс 2% от суммы, превышающей &nbsp;100 000 руб.;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 200 001 рубля до 1 млн руб. размер госпошлины составляет 5 200 руб. плюс 1% от суммы, превышающей 200 000 руб.;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования более 1 млн руб., то сумма пошлины составляет 13 200 руб. плюс 0,5% от суммы, превышающей 1 млн руб., при этом максимальная сумма пошлины ограничена 60 000 руб.</span></p><p class="p_heading6" style="page-break-after: avoid;"><a name="calc_duty_calc_claim_arbitrate_court" class="hmanchor"></a><span class="f_heading6">Для арбитражных судов</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если родовая подсудность суда — </span><span class="f_Кнопка">Арбитражный</span><span class="f_BodyText"> (словарь № 14, термин 2), то расчет осуществляется по следующим правилам:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования не более 100 тыс. рублей, то сумма государственной пошлины составляет 4% от исковой цены, при этом не менее 2 тысяч рублей;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 100 тыс. до 200 тыс. рублей, то устанавливается фиксированная сумма в 4 000 рублей пошлины плюс 3% от той суммы, что превышает 100 тыс. рублей;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 200 тыс. до 1 000 тыс. рублей, то устанавливается фиксированная сумма в 7 тыс. рублей плюс 2% от суммы, которая превысит 200 тыс. рублей;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования находится в диапазоне от 1 до 2 млн. рублей, то устанавливается фиксированная сумма в 23 000 рублей плюс 1% с суммы свыше 1 млн. руб.;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если размер требования больше 2 млн. рублей, то устанавливается фиксированная сумма в 33 000 рублей плюс 0,5% с суммы выше 2 миллионов, но в целом не более 200 тыс. рублей.</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="calc_duty_calc_order" class="hmanchor"></a><span class="f_heading5">Алгоритм расчета госпошлины для приказного производства</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В случае если госпошлина рассчитывается для дела приказного производства, то получившаяся в предыдущем разделе сумма делится пополам.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="calc_duty_round" class="hmanchor"></a><span class="f_heading5">Округление полученного значения пошлины</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Функционал округления рассчитанной суммы госпошлины настраивается сопровождением. Вы можете настроить округление для выбранных типов родовой подсудности. Обратитесь в техническую поддержку.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Если значение константы&nbsp;<a href="constants_constlist_technical.htm#lawactduesumround" class="topiclink">LawActDueSumRound</a>&nbsp;NULL или пусто, то округление не производится.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Если значение константы&nbsp;<a href="constants_constlist_technical.htm#lawactduesumround" class="topiclink">LawActDueSumRound</a>&nbsp;включает коды словаря № 14, то для дел, родовая подсудность которых перечислена в значении константы, после расчета суммы госпошлины выполняется ее корректное округление с учетом общепринятых математических правил округления до ближайшего целого с 4 знаков до 2.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="calc_duty_calc_currency" class="hmanchor"></a><span class="f_heading5">Расчет госпошлины для валютных долгов</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если <a href="glossary.htm#debt_currency" class="topiclink">валюта долга</a> не совпадает с <a href="glossary.htm#system_currency" class="topiclink">основной валютой Системы</a> (то есть той, которая в таблице currency имеет id=1 и при выборе валюты указана в списке первой), то такой долг называется валютным. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для <a href="glossary.htm#debt_in_other_currency" class="topiclink">валютных долгов</a> госпошлина рассчитывается на основании суммы размера требования, конвертированной в основную валюту. Осуществляется попытка конвертации суммы на дату подачи в суд либо на текущую дату. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если конвертация осуществилась удачно, то затем производится расчет в соответствии с описанными выше алгоритмами для <a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_claim" class="topiclink">искового</a> и <a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_order" class="topiclink">приказного</a> производства.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="calc_duty_calc_currency_card" class="hmanchor"></a><span class="f_heading6">Порядок конвертации размера требования в основную валюту в карточке судебной работы</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Если поле &quot;Дата подачи в суд&quot; заполнено, и в Системе указан курс валюты на дату подачи в суд, то сумма конвертируется, и расчет госпошлины выполняется.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Если поле &quot;Дата подачи в суд&quot; не заполнено или отсутствует курс валюты долга на дату подачи в суд, но в Системе есть данные о курсе валюты на текущую дату, то появляется окно подтверждения:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">Курс валюты на дату подачи в суд не найден. Для расчета госпошлины на текущую дату нажмите &quot;Да&quot;, для отмены &quot;Нет&quot;.</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выбрал вариант &quot;Да&quot;, то сумма конвертируется по курсу на текущую дату, и расчет госпошлины выполняется;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выбрал вариант &quot;Нет&quot;, то расчет госпошлины не выполняется.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Если поле &quot;Дата подачи в суд&quot; не заполнено или отсутствует курс валюты долга на дату подачи в суд, и одновременно с этим в Системе отсутствуют данные о курсе валюты на текущую дату, то появляется окно подтверждения (в этом случае расчет госпошлины не выполняется):</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">Невозможно рассчитать госпошлину, так как отсутствует информация о курсе валют на дату подачи в суд и на текущую дату.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="calc_duty_calc_currency_list" class="hmanchor"></a><span class="f_heading6">Порядок конвертации размера требования в основную валюту в модуле &quot;Юридический департамент&quot;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Порядок конвертации суммы размера требования аналогичен описанному <a href="legaldep_genoperations_duty_calculation.htm#calc_duty_calc_currency_card" class="topiclink">для карточки судебной работы</a> с учетом того, что в данном случае действие осуществляется массово.</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Если среди выбранных дел найдены такие, к которых не заполнено поле &quot;Дата подачи в суд&quot;, то появляется следующее предупреждение:</span></p><p class="p_quote_my" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_quote_my">Имеются валютные дела, у которых дата подачи в суд не заполнена. Хотите рассчитать по ним госпошлину на текущую дату?</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выберет вариант &quot;Да&quot;, массовый расчет госпошлины будет производиться для всех выбранных долгов.</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Если пользователь выберет вариант &quot;Нет&quot;, то расчет госпошлины будет производиться только для тех долгов, у которых заполнена дата подачи в суд.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">По результату расчета госпошлины будет показано информационное сообщение с указанием, для какого количества дел:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Расчет прошел успешно;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Расчет не производился;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Расчет не осуществился из-за ошибок.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

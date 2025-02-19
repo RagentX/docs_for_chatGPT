@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Загрузка истории работы с должником</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Загрузка истории работы с должником</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="debtors.htm">Список должников</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Загрузка истории работы с должником</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtors_utils_block_addresses.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="debtors.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtors_doc_save.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Функция загрузки истории работы используется, как правило, при аутсорсинге или для операторов, работающих в удаленных филиалах организации и не имеющих доступа к системе, установленной в головной организации. В качестве результатов работы им передается файл MS Excel определенного формата для его загрузки в локальную систему. В результате загрузки данных в локальной системе появится информация о совершенных звонках, выездах и т. д.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Доступ к функции имеют только те пользователи, в роли которых доступ DEBT_LIST_CONTACT_HISTORY_LOAD установлен в значение TRUE.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Порядок действий</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы загрузить историю работы, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме </span><span class="f_ListNumber2"><a href="debtors_list.htm#pictureform_debts" class="topiclink">Список должников</a></span><span class="f_ListNumber"> в контекстном меню</span><span class="f_ListNumber"> (вызывается правой кнопкой мыши)</span><span class="f_ListNumber"> выберите пункт </span><span class="f_ListNumber" style="font-weight: bold;">Загрузка истории работы</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В открывшемся диалоговом окне Windows выберите файл MS Excel в нужном формате и нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">Open</span><span class="f_ListNumber"> (</span><span class="f_ListNumber" style="font-weight: bold;">Открыть</span><span class="f_ListNumber">). </span></p><p class="p_BodyText"><span class="f_BodyText">Идентификация загруженных данных выполняется по следующему алгоритму:</span></p>
+<p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">1)</span><span class="f_ListNumber2">Основным идентификатором является ID долга. При его заполнении в строке остальные идентификаторы (ID должника, Номер договора, Лицевой счет, ID Клиента) не учитываются.</span></p><p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">2)</span><span class="f_ListNumber2">При отсутствии данных в поле ID долга основным идентификатором является ID должника. Если у должника есть хотя бы один активный долг, контакт будет регистрироваться на первый загруженный активный долг данного должника. Если у должника все долги закрытые, то контакт будет регистрироваться на последний загруженный закрытый долг данного должника.</span></p><p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">3)</span><span class="f_ListNumber2">При отсутствии данных в столбцах ID должника и ID долга идентификаторами являются Номер договора, Лицевой счет, ID Клиента либо их сочетание, в зависимости от того, какие из этих полей заполнены.</span></p><p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">4)</span><a name="p4" class="hmanchor"></a>При загрузке записи с типом исхода 1 (звонок) или 3 (входящий звонок), в случае если поле № 11 (ID телефона/ID Адреса) заполнено и значение в нем корректно (телефон с таким ID существует и принадлежит указанному должнику), загружается контакт на указанный ID телефона.</p><p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">5)</span><span class="f_ListNumber2">При загрузке записи с типом 2 (выезд):</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если поле № 11 (ID телефона/ID Адреса) заполнено и значение указано корректно (адрес с таким ID существует и принадлежит указанному должнику), загружается контакт на указанный ID адреса;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если поле № 11 (ID телефона/ID адреса) не заполнено или телефон/адрес с таким ID не принадлежит указанному должнику, контакт загружается без привязки к телефону/адресу (в зависимости от типа контакта).</span></p><p class="p_ListNumber2" style="text-indent: 0; page-break-after: avoid; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListNumber2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">6)</span><span class="f_ListNumber2">При загрузке записи с типом 7 (SMS) поле ID телефона обязательно к заполнению.</span></p><p class="p_BodyText"><span class="f_BodyText">В случае если тип исхода не определен или не соответствует диапазону 1-5 или 7, данный контакт будет загружен с типом &quot;Звонок&quot;, Результат &quot;История работы&quot; (независимо от кода исхода).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В случае если код исхода не определен или код исхода в файле не соответствует ни одному из кодов в РМ &quot;Настройка дерева контактов&quot; для указанного типа исхода, данный контакт будет загружен с результатом &quot;История работы&quot; для данного типа.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При загрузке записей с типом 7 (SMS), если не указан ID Сценария или указан некорректно (сценария с указанным номером для SMS-сообщений нет), SMS-сообщение загружается без привязки к сценарию.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Строка файла может быть не загружена, если:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">не идентифицирован долг (Тип 0);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">дата в файле больше текущей даты (Тип 2);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">длина строки (Направление + Комментарий) больше 2048 символов (Тип 3);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">у записи с типом 7 (SMS) не указан или некорректно указан ID Телефона.</span></p><p class="p_BodyText"><span class="f_BodyText">Если при загрузке обнаружена хотя бы одна запись, которая не может быть загружена, будет предложено сохранить файл с ошибками. В файле будут отображаться все данные (для поля &quot;Комментарий&quot; — первые 950 символов), в последнем столбце будет содержаться причина ошибки.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В результате загрузки данных в локальной системе будут сформированы контакты на дату, которая указана в файле (столбец № 3), с типом из столбца № 9 и результатом в соответствии с кодом исхода (столбец № 10), значение в поле &quot;Комментарий&quot; — (Направление (столбец № 4) + Комментарий (Столбец № 5)), ), &quot;Оператор&quot; — Оператор (Столбец № 13) (если поле пустое, то оператор, выполняющий загрузку истории работы).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В случае если для контакта одновременно заполнены поля &quot;Дата обещания&quot; (Столбец № 14) и &quot;Сумма платежа&quot; (Столбец № 15), для указанного долга в систему загружается обещание с комментарием &quot;Импортировано при загрузке истории работы&quot;, и у контакта будет ссылка на загруженное обещание.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В случае если контакт не загружается в систему, то и обещание тоже не будет загружено в систему.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При загрузке записей с типом исхода 1 или 3, в случае если ID телефона в загружаемом файле корректен (корректность телефона описана <a href="debtors_loadhistory.htm#p4" class="topiclink">выше</a>):</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если код исхода (Столбец № 10) в загружаемом файле соответствует значению константы DialerAutoinfoSuccessResult или константы DialerAutoinfoUncompleteResult и статус этого телефона &quot;Не звонили ни разу&quot; или &quot;Результата не было&quot;, то статус этого телефона меняется на &quot;Автоинформатор&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если статус телефона &quot;Не звонили ни разу&quot; или &quot;Результата не было, код исхода (Столбец № 10) в загружаемом файле не соответствует значениям констант DialerAutoinfoSuccessResult и DialerAutoinfoUncompleteResult и у данного исхода включен флаг <a href="contactssettings_add.htm#succesful_result" class="topiclink">Считать результат успешным</a>, то статус телефона меняется на &quot;Результат&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если статус телефона &quot;Не звонили ни разу&quot;, код исхода (Столбец № 10) в загружаемом файле не соответствует значениям констант DialerAutoinfoSuccessResult и DialerAutoinfoUncompleteResult, и у данного исхода не включен флаг <a href="contactssettings_add.htm#succesful_result" class="topiclink">Считать результат успешным</a>, то статус телефона меняется на &quot;Результата не было&quot;</span></p><p class="p_BodyText"><span class="f_BodyText">При этом если в файле дата контакта больше даты последнего звонка по этому телефону в системе, то телефону устанавливается дата последнего звонка из файла.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При загрузке записей с типом исхода 2, в случае если ID адрес в загружаемом файле корректен (корректность адреса описана в пункте Идентификация):</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если статус адреса &quot;Не выезжали ни разу&quot; или &quot;Результата не было&quot; и у данного исхода включен флаг <a href="contactssettings_add.htm#succesful_result" class="topiclink">Считать результат успешным</a>, то статус адреса меняется на &quot;Результат&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если статус адреса &quot;Не выезжали ни разу&quot; и у данного исхода не включен флаг <a href="contactssettings_add.htm#succesful_result" class="topiclink">Считать результат успешным</a>, то статус адреса меняется на &quot;Результата не было&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При загрузке записей с типом 1 или 3, в случае если текст в поле &quot;Комментарий&quot; превышает 2048 символов, произойдет разбиение контакта на несколько по 2048 символов в комментарии в каждом. В результате будут загружено несколько контактов (в зависимости от количества символов в поле &quot;Комментарий&quot;) с одинаковыми параметрами. Дата этих исходов будет отличаться на 1 секунду (для корректной сортировки). При этом если в файле для данного контакта есть обещание, на него будет ссылаться только один зарегистрированный контакт.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">В карточке должника телефоны в статусе &quot;Автоинформатор&quot; окрашиваются в светло-оранжевый цвет. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">В результате загрузки записей с типом исхода 7 будут сформированы SMS-сообщения со статусом &quot;Передано&quot; для телефона из поля &quot;ID телефона&quot; (Столбец № 11) на дату, которая указана в файле (столбец № 3), с текстом сообщения из поля &quot;Комментарий&quot; (Столбец № 5), Оператор — из поля &nbsp;&quot;Оператор&quot; (Столбец № 13) (если поле пустое, то оператор, выполняющий загрузку истории работы), с номером сценария из поля &quot;ID Сценария&quot; (Сценарий № 12).</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Формат файла</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Исходный файл MS Excel должен иметь следующий формат:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">1)</span><span class="f_ListBullet2"><a href="glossary.htm#id_debtor" class="topiclink">ID должника</a></span><span class="f_ListBullet2">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">2)</span><span class="f_ListBullet2"><a href="glossary.htm#id_debt" class="topiclink">ID долга</a></span><span class="f_ListBullet2">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">3)</span><span class="f_ListBullet2">Дата — обязательное поле;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">4)</span><span class="f_ListBullet2">Направление;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">5)</span><span class="f_ListBullet2">Комментарий — количество символов в комментарии для записей с типом исхода 1,2,3,4,5 не должно превышать 8000 символов; для записей с типом исхода 7 не должно превышать 512 символов;</span></p><p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">: если количество символов в поле </span><span class="f_Кнопкакурсив">Комментарий</span><span class="f_Emphasis"> превышает 8000 символов, строки слева будет обрезана до 8000 символов.</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">6)</span><span class="f_ListBullet2">Номер договора;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">7)</span><span class="f_ListBullet2">Лицевой счет;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">8)</span><span class="f_ListBullet2"><a href="glossary.htm#id_client" class="topiclink">ID Клиента</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">9)</span><span class="f_ListBullet2"> Тип исхода (1 — звонок, 2 — выезд, 3 — входящий звонок, 4 — визит в офис, 5 — Специальное, 7 — SMS);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">10)</span><span class="f_ListBullet2"> Код исхода (настраивается в модуле <a href="contactssettings.htm" class="topiclink">&quot;Настройка дерева контактов&quot;</a>);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">11)</span><span class="f_ListBullet2"> ID Телефона/ID Адреса;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">12)</span><span class="f_ListBullet2"> ID Сценария;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">13)</span><span class="f_ListBullet2"> ID Оператора;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">14)</span><span class="f_ListBullet2"> Дата обещания;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span class="f_ListBullet2" style="display:inline-block;width:0.2396in;margin-left:-0.2396in">15)</span><span class="f_ListBullet2"> Сумма обещания.</span></p><p class="p_BodyText"><span class="f_BodyText">Первая строка файла должна содержать названия столбцов (&quot;шапку&quot;), которые могут быть любыми. Файл должен содержать 5 или более столбцов, в противном случае загрузка данных выполнена не будет. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Поля &quot;Номер договора&quot;, &quot;Лицевой счет&quot;, &quot;ID клиента&quot; могут отсутствовать в файле. Они необходимы для идентификации при отсутствии данных в столбце &quot;ID должника&quot; или &quot;ID долга&quot;.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

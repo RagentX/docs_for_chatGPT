@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Правила расчета остатков</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Правила расчета остатков</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="admin.htm">Администрирование</a> &gt; <a href="bank_portfolio.htm">Клиенты и портфели</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Правила расчета остатков</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="bank_portfolio_bankmanager_work.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="bank_portfolio.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="bank_portfolio_custom_reports.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Правила расчета остатков применяются для цессий — долгов, проданных клиентами в данную организацию. Правило расчета определяет порядок списания составляющих долга при регистрации или загрузке платежей, который будет применяться в портфеле. </span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Если в портфеле правило расчета остатков отсутствует, платежи будут только отображаться, но не учитываться в расчете остатка долга.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">При загрузке или регистрации одного или более подтвержденных платежей расчет остатка будет производиться только при наличии правила расчета в портфеле. Без правила расчета нет, расчет остатка производиться не будет.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_BodyText"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. При регистрации подтверждённого платежа в историю изменения составляющих долга заносится ссылка на этот платеж. Если загрузка осуществляется через РМ </span><span class="f_Кнопкакурсив">Загрузка платежей</span><span class="f_Emphasis">, и пользователь вместе с платежами указал и остаток, то правило расчета не срабатывает, ссылка на платеж не загружается в историю изменения составляющих долга, составляющие долга не перерассчитываются.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Каждое правило содержит набор шагов правила (штраф, пени, основной долг и т. д.). Для каждого шага указан порядковый номер его выполнения. Каждый шаг может встречаться в правиле только один раз. Каждый номер также может встречаться в правиле только один раз.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Если создать пустое правило и прикрепить его к портфелю, то составляющие вычитаться не будут, а остаток к погашению будет. Если правила расчета</span> нет, то ни остаток, ни составляющие автоматически вычитаться не будут!</p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="пример_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17e5f533.png"/> <span class="f_Кнопкакурсив">Пример</span><span class="f_Emphasis">. Допустим, долг составляет 10000 руб., включая: 5000 руб. — основной долг, 2000 — пени, 3000 — проценты. Договором с банком определено, что сначала погашаются пени, затем проценты и только потом основной долг.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0 0;"><span class="f_Emphasis">В этом случае правило расчета должно включать следующие шаги:</span></p>
+<p class="p_BodyText" style="margin: 0 0 0 0;"><span class="f_Emphasis">1. Пени</span></p>
+<p class="p_BodyText" style="margin: 0 0 0 0;"><span class="f_Emphasis">2. Проценты</span></p>
+<p class="p_ListNumber2" style="page-break-after: avoid; margin: 0 0 0 0.4896in;"><span class="f_Emphasis">3. Основной долг</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_Emphasis">При регистрации платежа на сумму 4000 руб. сначала будет списана сумма пени (станет 0 руб.), потом сумма по процентам (станет 1000 руб.), а основной долг так и останется 5000 руб., т.к. суммы платежа достаточно только на оплату пени и частично на оплату процентов. Таким образом, остаток по долгу составит 6000 руб.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/> <span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. Если долг не является цессией, то вычитать суммы автоматически некорректно. Это связано с тем, что банк ежедневно начисляет различные штрафы и пени, и информация по этим формулам есть не всегда. Для цессии обычно все суммы фиксированы, поэтому правило расчета удобно для организации.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/> <span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. Необходимо понимать, что сумма составляющих долга не обязательно является остатком долга. Клиент, передавая долг в работу организации, может не предоставлять всей информации, а передавать только основные суммы.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. При отмене платежа, при условии что в истории изменения составляющих долга есть ссылка на этот платеж, происходит перерасчет составляющих долга в сторону увеличения, но не больше чем было до отмены этого платежа. </span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><img alt="пример_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17e5f533.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Пример</span><span class="f_Emphasis">. При отмене платежа из примера выше, сумма &nbsp;составляющих восстановится там все просто. А вот если после платежа из пример поступит еще один платеж на 2000 руб., то сумма процентов станет 0 руб., сумма основного долга станет равна 4000 руб. Далее если мы отменяем этот платеж, то составляющие долга восстановятся до уровня который был перед внесением платежа, т.е. пени = 0 руб. , проценты = 1000 руб., основной долг = 5000 руб.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_Emphasis">При этом алгоритм расчет суммы по каждому составляющему долга следующий – берется текущая сумма составляющего долга к ней прибавляется сумма &nbsp;составляющего которая была до момента внесения платежа и вычитается сумма составляющего после внесения платежа. Если на примере, </span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_Emphasis">- Пени = &quot;0+0-0&quot; = 0</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_Emphasis">- Проценты = &quot;0+1000-0&quot; = 1000</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_Emphasis">- Основной долг = &quot;4000+5000-4000&quot; = 5000</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="list_rules" class="hmanchor"></a><span class="f_heading5">Список правил расчета остатков</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Для того чтобы открыть список правил расчета, в нижней части </span>формы <a href="bank_portfolio_list.htm#pictureform_clients" class="topiclink">Клиенты и портфели</a><span class="f_BodyText"> нажмите кнопку </span><span class="f_BodyText" style="font-weight: bold;">Правило расчета</span><span class="f_BodyText">. Форма списка содержит следующие элементы:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">раскрывающийся список правил расчета;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">кнопки для добавления, редактирования, удаления правил расчета;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">список шагов, входящих в состав выбранного правила расчета;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">кнопки для добавления, редактирования, удаления шагов в правиле расчета.</span></p><p><a name="pictureform_calcrules" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:2.1875in;height:2.2708in" href="form_calcrules.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_calcrules_zoom50" style="border:none;width:2.1875in;height:2.2708in" src="form_calcrules_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="add_rule" class="hmanchor"></a><span class="f_heading5">Создание правила расчета остатков</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В <a href="bank_portfolio_calcrules.htm#list_rules" class="topiclink">списке правил расчетов</a> нажмите кнопку <img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>, относящуюся к списку правил. Откроется форма редактирования нового правила.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В форме заполните следующие поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Название </span><span class="f_ListBullet2">— название правила расчета. Поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0.0417in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Комментарий</span><span class="f_ListBullet2"> — дополнительная информация.</span></p><p><a name="pictureform_addcalcrule" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:1.3958in;height:1.0833in" href="form_addcalcrule.png"><img id="TOGGLE0186A2" class="image-toggle" alt="form_addcalcrule_zoom50" style="border:none;width:1.3958in;height:1.0833in" src="form_addcalcrule_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">, чтобы сохранить правило.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Сформируйте список шагов правила расчета (см. <a href="bank_portfolio_calcrules.htm#step_list" class="topiclink">Формирование списка шагов правила расчета</a>).</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="step_list" class="hmanchor"></a><span class="f_heading5">Формирование списка шагов правила расчета</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В <a href="bank_portfolio_calcrules.htm#list_rules" class="topiclink">списке правил расчета</a> выберите нужное правило в раскрывающемся списке.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку <img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>, относящуюся к списку шагов правила. Откроется форма редактирования нового шага правила.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">В форме заполните следующие поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Название</span><span class="f_ListBullet2"> — название шага правила. Если выбранный шаг уже есть в правиле расчета, при сохранении будет выдано соответствующее сообщение. Такой шаг сохранить нельзя; </span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Порядок</span><span class="f_ListBullet2"> — номер выполнения шага в правиле. Если выбранный номер шага уже есть в правиле расчета, при сохранении будет выдано соответствующее сообщение. Такой шаг сохранить нельзя.</span></p><p><a name="pictureform_calcrules_addrecord" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:1.4167in;height:0.9271in" href="form_calcrules_addrecord.png"><img id="TOGGLE0186A3" class="image-toggle" alt="form_calcrules_addrecord_zoom50" style="border:none;width:1.4167in;height:0.9271in" src="form_calcrules_addrecord_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">, чтобы сохранить шаг правила в списке.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Повторите шаги 1-4, чтобы добавить все шаги в правило.</span></p><p class="p_BodyText"><span class="f_BodyText">Если требуется отредактировать шаг правила, выберите его в списке и нажмите относящуюся к списку кнопку <img alt="btn_edit_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_edit_i.png"/>. Откроется <a href="bank_portfolio_calcrules.htm#pictureform_calcrules_addrecord" class="topiclink">форма редактирования записи правила</a>, в которой измените необходимые атрибуты и нажмите кнопку </span><span class="f_BodyText" style="font-weight: bold;">ОК</span><span class="f_BodyText">, чтобы сохранить изменения.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если требуется удалить шаг из правила, выберите его в списке и нажмите относящуюся к списку кнопку <img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/>. В открывшемся диалоговом окне подтвердите удаление записи, нажав кнопку </span><span class="f_BodyText" style="font-weight: bold;">Yes</span><span class="f_BodyText">.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Редактирование правила расчета остатков</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В <a href="bank_portfolio_calcrules.htm#list_rules" class="topiclink">списке правил расчета</a> выберите нужное правило в раскрывающемся списке и нажмите относящуюся к нему кнопку <img alt="btn_edit_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_edit_i.png"/>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В<a href="bank_portfolio_calcrules.htm#add_rule" class="topiclink"> форме редактирования правила расчета</a> измените необходимые атрибуты.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_Кнопка">ОК</span><span class="f_ListNumber">, чтобы сохранить изменения.</span></p><p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Для того чтобы отредактировать шаги правила, см. <a href="bank_portfolio_calcrules.htm#step_list" class="topiclink">Формирование списка шагов правила расчета</a>.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Удаление правила расчета остатков</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Удалить правило расчета можно только в том случае, если оно не используется ни в одном портфеле, а также не <a href="bank_portfolio_control_bags_in_out_rules_for_portfolio.htm" class="topiclink">назначено ни одному долгу в каком-либо портфеле</a>.</span></p>
+<p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Для того чтобы удалить правило расчета, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В <a href="bank_portfolio_calcrules.htm#list_rules" class="topiclink">списке правил расчета</a> выберите нужное правило в раскрывающемся списке.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку <img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/>, относящуюся к списку правил.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0 0 0.0417in 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">В открывшемся диалоговом окне нажмите </span><span class="f_ListNumber" style="font-weight: bold;">Yes</span><span class="f_ListNumber">, чтобы подтвердить удаление правила расчета.</span></p><p class="p_BodyText" style="margin: 0 0 0.0417in 0;"><span class="f_BodyText">Если правило расчета используется в каких-либо портфелях, будет выдано сообщение о невозможности выполнения операции. Нажмите кнопку </span><span class="f_BodyText" style="font-weight: bold;">ОК</span><span class="f_BodyText">, чтобы закрыть его.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Назначение правила расчета портфелю</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Выбор правила расчета выполняется при создании/редактировании портфеля в <a href="bank_portfolio_control_bags_in_out.htm#pictureform_clients_addportfel" class="topiclink">форме редактирования портфеля</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Дополнительно доступна настройка правил расчета остатоков для части долгов портфеля — см. <a href="bank_portfolio_control_bags_in_out_rules_for_portfolio.htm" class="topiclink">Правило расчета остатков по долгу</a>.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_calcrules_zoom50.png','hm.src1','form_calcrules.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','form_addcalcrule_zoom50.png','hm.src1','form_addcalcrule.png');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','form_calcrules_addrecord_zoom50.png','hm.src1','form_calcrules_addrecord.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Статусы и жизненный цикл задачи</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Статусы и жизненный цикл задачи</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="functions.htm">Функциональные возможности</a> &gt; <a href="planning.htm">Планирование (Задачи)</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Статусы и жизненный цикл задачи</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="planning_tasks_auto_change_executor.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="planning.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="life_of_task_table.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Жизненный цикл задачи определяется ее статусами (см. словарь № 275 </span><span class="f_Кнопка">Статус задачи (Новое планирование)</span><span class="f_BodyText">). Любому пользователю доступна смена статусов задачи в соответствии с <a href="planning_permit.htm#exec" class="topiclink">полномочиями оператора</a>, независимо от того, кто назначен исполнителем данной задачи.</span></p>
+<p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_BodyText"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. Далее описывается стандартная реализация жизненного цикла задач. При необходимости вендор может настроить кастомизированную логику перехода по этапам жизненного цикла задач. Для этого обратитесь в техническую поддержку</span><span class="f_BodyText">.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Для настройки ЖЦ задач используется таблица debt_task_status_flow. Подробнее — см.&nbsp;<a href="life_of_task_table.htm" class="topiclink">Таблица для настройки ЖЦ задач</a>.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Список статусов задачи</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.1042in;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Номер</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Финальный</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Словарь</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">1</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Поставлена</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">2</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">В работе</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">3</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отклонена</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">231</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">4</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Снята</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Не используется</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">232</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">5</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отложена</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">6</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Готова к проверке</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">7</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">233</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">8</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Выполнена</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Да</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.6979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">9</span></p>
+</td>
+<td style="vertical-align:top; width:1.6354in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Не выполнена</span></p>
+</td>
+<td style="vertical-align:top; width:1.5208in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Да</span></p>
+</td>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">234</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_BodyText"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. В колонке </span><span class="f_Кнопкакурсив">Словарь</span><span class="f_Emphasis"> указаны номера словарей, хранящих списки причин смены статуса на данный.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Сразу после постановки задаче присваивается статус &quot;Поставлена&quot;. Далее любой оператор может ее либо принять, либо отклонить. Соответственно, статус задачи изменится на &quot;В работе&quot; либо на &quot;Отклонена&quot;. При статусе &quot;В работе&quot; есть возможность ее выполнить и присвоить ей статус &quot;Готова к проверке&quot;. Если задача была отклонена, у постановщика есть возможность вновь вернуть ее в работу, присвоив статус &quot;Возврат в работу&quot;. Кроме того, задачу можно отложить. Постановщик имеет возможность принять выполнение задачи, отметить ее невыполнение или снять задачу.</span></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:7.0104in;height:3.9063in" href="cheme_statuses_of_task.png"><img id="TOGGLE0186A1" class="image-toggle" alt="cheme_statuses_of_task_zoom50" style="border:none;width:7.0104in;height:3.9063in" src="cheme_statuses_of_task_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><span class="f_BodyText">Для смены статусов задач используются соответствующие кнопки в нижней области формы <a href="planning_tasks_work.htm#picture" class="topiclink">рабочей вкладки &quot;Задачи&quot;</a>. Доступность кнопок зависит от текущего статуса задачи и от <a href="planning_permit.htm" class="topiclink">полномочий пользователя</a>.</span></p>
+<p class="p_caption" style="margin: 0.0833in 0 0 0.3958in;"><span class="f_caption">Таблица 1. Кнопки смены статусов и атрибутов задач</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Кнопка</span></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Полномочия</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Из статуса</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">В статус</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_settask" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_settask.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставить задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Нет</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_change_priority" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_change_priority.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Изменить приоритет</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отложена</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Не меняется</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_change_oper" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_change_oper.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Изменить исполнителя</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отложена</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_view" style="margin:0 auto 0 auto;width:0.2604in;height:0.2708in;border:none" src="btn_task_view.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Просмотреть задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Любой</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Не меняется</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="bth_attach" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="bth_attach.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Изменить вложения</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Любой</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Не меняется</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_accept" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_accept.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Принять задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_reject" style="margin:0 auto 0 auto;width:0.2708in;height:0.2708in;border:none" src="btn_task_reject.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отклонить задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Поставлена</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отклонена</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_delay" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_delay.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отложить задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отложена</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_mark" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_mark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отметить выполнение задачи</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Оператор</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Готова к проверке</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_return" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_return.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возвратить задачу</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Готова к проверке</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отклонена</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_note_yes" style="margin:0 auto 0 auto;width:0.2604in;height:0.2708in;border:none" src="btn_task_note_yes.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Принять выполнение задачи</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Готова к проверке</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отклонена</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Выполнена</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.7500in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><img alt="btn_task_note_no" style="margin:0 auto 0 auto;width:0.2604in;height:0.2604in;border:none" src="btn_task_note_no.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1.6250in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отметить невыполнение задачи</span></p>
+</td>
+<td style="vertical-align:middle; width:1.3021in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Постановщик</span></p>
+</td>
+<td style="vertical-align:middle; width:2.2292in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">В работе</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Возврат в работу</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Готова к проверке</span></p>
+<p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Отклонена</span></p>
+</td>
+<td style="vertical-align:middle; width:2.0000in; height:0.1563in; padding:0; border:solid thin #000000;"><p class="p_In_Table" style="text-align: center;"><span class="f_In_Table">Не выполнена</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_BodyText"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. Кнопка <img alt="bth_attach" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="bth_attach.png"/> </span><span class="f_Кнопкакурсив">Изменить вложения</span><span class="f_Emphasis"> доступна, когда включена константа <a href="constants_constlist.htm#debttask.attachments.use" class="topiclink">DebtTask.Attachments.Use</a></span>.</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','cheme_statuses_of_task_zoom50.png','hm.src1','cheme_statuses_of_task.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

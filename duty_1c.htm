@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Госпошлина и 1С</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Госпошлина и 1С</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   &raquo;No topics above this level&laquo;
+   </p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Госпошлина и 1С</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <img src="hm_btn_navigate_prev_d.png" border="0"
+        ><a href="debug_info.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><img src="hm_btn_navigate_next_d.png" border="0">
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_heading4" style="page-break-after: avoid;"><span class="f_heading4" style="background-color: #ebf2de;">Интеграция с веб-сервисом 1С в процессе оплаты госпошлины</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В настоящей версии Системы осуществлена загрузка данных о контрагентах (УФК) из веб-сервиса и производится периодическая синхронизация этих данных.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">&nbsp;Процесс оплаты госпошлины происходит следующим образом:</span></p>
+<p class="p_BodyText" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.2500in;"><span class="f_BodyText" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1)</span><span class="f_BodyText" style="background-color: #ebf2de;">Сначала производится запрос оплаты госпошлины, при котором происходит обращение к веб-сервису.</span></p><p class="p_BodyText" style="text-indent: 0; padding-left: 0.2083in; margin-left: 0.2500in;"><span class="f_BodyText" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2)</span><span class="f_BodyText" style="background-color: #ebf2de;">Затем Система осуществляет проверку статуса дела путем обращения к веб-сервису.</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Для обеспечения этого произведены следующие доработки.</span></p>
+<p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_heading5" style="background-color: #ebf2de;">Добавление полей в таблицы</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В таблицу со списком судов (LAW_COURT) добавлено поле GUID_1C — ссылка на guid контрагента (УФК) в 1С.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В таблицу судебных дел (LAW_ACT) добавлено поле DUE_REQ_GUID_1C — ссылка на guid контрагента (УФК) в 1С.</span></p>
+<p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_heading5" style="background-color: #ebf2de;">Первоначальная выгрузка данных в Систему</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Реализована программная функция для загрузки списка УФК из веб-сервиса 1С. В результате ее работы в Систему Контакт загружается список УФК из веб-сервиса 1С в виде таблицы.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">При этом выгружены следующие поля:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Информация о контрагенте:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">GUID</span><span class="f_ListBullet3" style="background-color: #ebf2de;">&nbsp;— идентификатор в системе 1С;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Код по порядку</span><span class="f_ListBullet3" style="background-color: #ebf2de;">&nbsp;— порядковый номер;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Получатель</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">ИНН</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">КПП</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Юридический адрес</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Фактический адрес</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Телефон</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Информация о банковском счете:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">GUID</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">БИК</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Корреспондентский счет</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Расчетный счет</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Информация об ошибке:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Код ошибки</span><span class="f_ListBullet3" style="background-color: #ebf2de;">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">Текст ошибки</span><span class="f_ListBullet3" style="background-color: #ebf2de;">.</span></p><p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_heading5" style="background-color: #ebf2de;">Синхронизация</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Ежедневно в рамках ночной процедуры осуществляется синхронизация данных о судах (УФК). Сверка осуществляется по значениям ИНН и КПП между таблицей, содержащей список УФК, полученных из 1С и таблицей Системы, содержащей список судов.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Если ИНН+КПП, соответствующие суду, не найдены в 1С, либо если ИНН+КПП найдены, но производилось обновление поля LAW_COURT.guid_1c — отправляется email со списком судов и платежных реквизитов, соответствующих ему.&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">При возникновении ошибки отправляется email с информацией о том, какая ошибка произошла при сверке.&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Адреса для отправки сообщений об ошибках указаны в таблице UT_WS_PARAMS_LETO для WS_ID = 4:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">LetoBusinessUserEmailList</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&nbsp;– перечень адресов email, разделенных точкой с запятой, для информирования о появлении судов, у которых набор ИНН+КПП не найден в 1С;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка" style="background-color: #ebf2de;">AdminEmailList</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&nbsp;– перечень адресов email, разделенных точкой с запятой, для информирования об ошибке, произошедшей в процессе сверки судов с информацией из 1С</span></p><p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_heading5" style="background-color: #ebf2de;">Передача информации о заявке на оплату госпошлины</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Модуль &quot;Карточка судебной работы&quot;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Для того чтобы осуществить запрос на оплату или доплату госпошлины, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Войдите в карточку судебной работы в приказном или исковом производстве. На рисунке показана карточка судебной работы для дела, находящегося в статусе &quot;Не оформлен&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Нажмите на кнопку &quot;Запрос госпошлины&quot; и в выпадающем меню выберите пункт &quot;Запрос оплаты госпошлины&quot; либо &quot;Запрос доплаты госпошлины&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Если была выбрана оплата госпошлины, то:</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0.0417in 0.2500in;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">a)</span><span class="f_ListNumber" style="background-color: #ebf2de;">Появится окно подтверждения с вопросом &quot;Вы действительно хотите запросить оплату госпошлины?&quot;. Нажмите &quot;Да&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0.0417in 0.2500in;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">b)</span><span class="f_ListNumber" style="background-color: #ebf2de;">Если поле &quot;Расчетная пошлина&quot; пусто, то выводится соответствующее сообщение, и выполнение действия останавливается. Если поле непустое, то алгоритм движется дальше.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Если была выбрана доплата госпошлины, то:</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0.0417in 0.2500in;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">a)</span><span class="f_ListNumber" style="background-color: #ebf2de;">Появляется окно подтверждения с вопросом &quot;Вы действительно хотите запросить доплату госпошлины?&quot;. Нажмите &quot;Да&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0.0417in 0.2500in;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">b)</span><span class="f_ListNumber" style="background-color: #ebf2de;">Откроется форма &quot;Запрос доплаты госпошлины&quot;, включающая следующие элементы:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet3" style="background-color: #ebf2de;">Текущая госпошлина — поле заблокировано и отображает текущее значение госпошлины;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet3" style="background-color: #ebf2de;">Введите размер доплаты — укажите сумму доплаты;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet3" style="background-color: #ebf2de;">Флаг &quot;Просуммировать введенный размер ГП с текущим&quot; — если флаг включен, то в конце алгоритма значение госпошлины увеличится на сумму доплаты.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0.0417in 0.2500in;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">c)</span><span class="f_ListNumber" style="background-color: #ebf2de;">Нажмите OK.&nbsp;</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Далее осуществляется процедура создания заявки на оплату госпошлины путем обращения к веб-сервису 1С. При этом:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">в параметр &quot;Описание&quot; передается текст &quot;Госпошлина за подачу иска в &lt;Наименование суда&gt; &lt;ФИО заемщика&gt;&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">в параметр &quot;Ставка НДС&quot; передается текст &quot;Без НДС&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">в параметр &quot;Сумма НДС&quot; передается текст &quot;0&quot; (ноль).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Появится окно с предложением прикрепить документ. Прикрепление документа реализовано обычным образом.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">7.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Статус дела меняется на новый статус &quot;Запрос оплаты госпошлины&quot; либо &quot;Запрос доплаты госпошлины&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">8.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Осуществляется протоколирование.&nbsp;</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Модуль &quot;Юридический департамент&quot;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В модуле &quot;Юридический департамент&quot; из вкладок &quot;Приказы&quot; и &quot;Иски&quot; доступ к функционалу госпошлины осуществляется через контекстное меню.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Для того чтобы осуществить запрос оплаты госпошлины, выполните следующие действия.</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Войдите в модуль &quot;Юридический департамент&quot; и сформируйте выборку при помощи сложного фильтра и/или мультифильтров.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Выберите одну или более записей, используя клавиши SHIFT и/или CTRL.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber" style="background-color: #ebf2de;">Щелкните левой кнопкой мыши для доступа к контекстному меню. В контекстном меню выберите пункт &quot;Госпошлина&quot;. В открывшемся подменю выберите подпункт &quot;Запросить ГП&quot;. Для дел, находящихся в статусах, при которых действие не доступно, запрос осуществляться не будет, о чем пользователя проинформирует соответствующее предупреждение. Если в списке останется одно или более дел, по которым можно осуществить запрос оплаты госпошлины, то для каждого из них будут произведены те же действия, что описаны выше.</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Отправка суммы запроса</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">При отправке запроса в 1С передается следующая сумма:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если формируется запрос на оплату ГП, то отправляется вся сумма из поля госпошлины;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если формируется запрос на доплату ГП, то отправляется только та сумма, которая была введена пользователем на форме доплаты ГП в поле &quot;Введите размер доплаты&quot;.</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Проверка результата запроса</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">После возвращения результата оправки запроса осуществляется проверка:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если запрос в 1С вернул ошибочный результат, то с приказом/иском далее не будет производиться никаких действий, т.е. судебное дело остается в текущем статусе;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Если запрос в 1С выполнен успешно, то дело меняет статус по существующей логике.</span></p><p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_heading5" style="background-color: #ebf2de;">Проверка статуса заявки</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Проверка статуса заявки на оплату госпошлины путем обращения к веб-сервису 1С осуществляется ежедневно в рамках автоматического процессинга.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Актуализируется статус приказов и исков в части оплаты госпошлины.&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Если значение i_law_act_id_list равно Null, то актуализация статусов осуществляется для всех дел со статусами ожидания оплаты госпошлины. Если значение i_law_act_id_list не пусто, то оно содержит список идентификационных номеров приказа или иска через запятую, в соответствии с которым актуализируются статусы дел.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Статус может иметь следующие значения:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Распоряжение не создано&quot; – свидетельствует о том что ответственный пользователь не создал документ &quot;распоряжение на списание&quot;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Платежное поручение не создано&quot; – аналогично п. 3, только касается документа &quot;Платежное поручение исходящее&quot;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Платежное поручение отменено&quot; – был создан документ &quot;Платежное поручение исходящее&quot;, но по каким-то причинам отменен</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Платежное поручение сформировано&quot; - был создан документ &quot;Платежное поручение исходящее&quot;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Платежное поручение подготовлено&quot; - был создан документ &quot;Платежное поручение исходящее&quot; и передан в оплату, но ответа пока не получено</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Платежное поручение оплачено&quot; – произошла оплата</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Статус не определен&quot; – по каким-то причинам не удалось определить состояние</span></p><p class="p_heading4" style="page-break-after: avoid;"><span class="f_heading4" style="background-color: #ebf2de;">Передача информации о судебных решениях в АБС банка</span></p>
+<p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_heading5" style="background-color: #ebf2de;">Добавлены новые значения в таблицы</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Таблица column_spec</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В таблицу&nbsp;</span><span class="f_Кнопка" style="background-color: #ebf2de;">column_spec</span><span class="f_BodyText" style="background-color: #ebf2de;">&nbsp;загружены новые строки, описывающие колонки:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Emphasis" style="background-color: #ebf2de;">debt_detail.number_value_11;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Emphasis" style="background-color: #ebf2de;">debt_detail.number_value_12;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Emphasis" style="background-color: #ebf2de;">debt_detail.number_value_13.</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Таблица aux_law_act_component</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В таблицу&nbsp;</span><span class="f_Кнопка" style="background-color: #ebf2de;">aux_law_act_component</span><span class="f_BodyText" style="background-color: #ebf2de;">&nbsp;добавлены новые записи:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.1042in;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:1.2708in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">table_for_debt</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">column_for_debt</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">table_fro_law_act</span></p>
+</td>
+<td style="vertical-align:middle; width:0.9375in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">column_for_law_act</span></p>
+</td>
+<td style="vertical-align:middle; width:4.2708in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">spec_for_law_act</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:1.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">debt_detail</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">number_value_11</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">law_act_debt_sum</span></p>
+</td>
+<td style="vertical-align:middle; width:0.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">NULL</span></p>
+</td>
+<td style="vertical-align:middle; width:4.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">%ссылка на column_spec, созданный в пункте 2%</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:1.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">debt_detail</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">number_value_12</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">law_act_debt_sum</span></p>
+</td>
+<td style="vertical-align:middle; width:0.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">NULL</span></p>
+</td>
+<td style="vertical-align:middle; width:4.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">%ссылка на column_spec, созданный в пункте 2%</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:1.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">debt_detail</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">number_value_13</span></p>
+</td>
+<td style="vertical-align:middle; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">law_act_debt_sum</span></p>
+</td>
+<td style="vertical-align:middle; width:0.9375in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">NULL</span></p>
+</td>
+<td style="vertical-align:middle; width:4.2708in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">%ссылка на column_spec, созданный в пункте 2%</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Таблица strings</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В таблицу&nbsp;</span><span class="f_Кнопка" style="background-color: #ebf2de;">strings</span><span class="f_BodyText" style="background-color: #ebf2de;">&nbsp;добавлены новые записи:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.1042in;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:0.8333in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">module</span></p>
+</td>
+<td style="vertical-align:top; width:0.4479in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">typ</span></p>
+</td>
+<td style="vertical-align:top; width:3.8958in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">Name</span></p>
+</td>
+<td style="vertical-align:top; width:2.6979in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header" style="background-color: #ebf2de;">text</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActOrderDebtComponentCaptionDD.NUMBER_VALUE_1</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по основному долгу</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActOrderDebtComponentCaptionDD.NUMBER_VALUE_2</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по процентам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActOrderDebtComponentCaptionDD.NUMBER_VALUE_10</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по неустойкам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActOrderDebtComponentCaptionDD.NUMBER_VALUE_11</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по страховкам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActOrderDebtComponentCaptionDD.NUMBER_VALUE_12</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по комиссиям</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActIskDebtComponentCaptionDD.NUMBER_VALUE_1</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по основному долгу</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActIskDebtComponentCaptionDD.NUMBER_VALUE_2</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по процентам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActIskDebtComponentCaptionDD.NUMBER_VALUE_10</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по неустойкам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActIskDebtComponentCaptionDD.NUMBER_VALUE_11</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по страховкам</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:0.8333in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4479in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:3.8958in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">LawActIskDebtComponentCaptionDD.NUMBER_VALUE_12</span></p>
+</td>
+<td style="vertical-align:middle; width:2.6979in; padding:0.0417in; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ebf2de;">Задолженность по комиссиям</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_heading5" style="background-color: #ebf2de;">Список компонентов долга&nbsp;</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Приказное производство</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Константе&nbsp;<a href="constants_constlist.htm#lawactorderdebtcomponentlist" class="topiclink">LawActOrderDebtComponentList</a>&nbsp;присваивается значение &quot;dd.number_value_2, dd.number_value_1, dd.number_value_10, dd.number_value_12, dd.number_value_11&quot;.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Исковое производство</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Константе&nbsp;<a href="constants_constlist.htm#lawactiskdebtcomponentlist" class="topiclink">LawActIskDebtComponentList</a>&nbsp;присваивается значение &quot;dd.number_value_2, dd.number_value_1, dd.number_value_10, dd.number_value_12, dd.number_value_11&quot;.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Режим копирования составляющих долга по договору в составляющие долга решению суда</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Константе&nbsp;<a href="constants_constlist.htm#lawactcopydebtinfoonapply" class="topiclink">LawActCopyDebtInfoOnApply</a>&nbsp;присваивается значение &quot;1,2&quot;</span></p>
+<p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_heading5" style="background-color: #ebf2de;">Передача информации о смене статуса судебных дел в АБС банка</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Создана процедура, отслеживающая статус судебного дела. При определенных изменениях статуса осуществляется передача ряда параметров в АБС банка. Сообщения об ошибках логируются.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Передача информации осуществляется при следующих изменениях статуса судебного дела:</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Приказное производство</span></p>
+<p class="p_heading8" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_heading8" style="background-color: #ebf2de;">Приказ остался приказом</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подготовлен&quot; (2) а &quot;Подан&quot; (3);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подан&quot; (3) а &quot;Приказ отправлен должнику&quot; (4);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подан&quot; (3) а &quot;Отказ в выдаче приказа&quot; (8).</span></p><p class="p_heading8" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_heading8" style="background-color: #ebf2de;">Приказ стал иском</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Приказ отправлен должнику&quot; (status=4) а &quot;Не подготовлен&quot; (act_status=1);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Приказ получен должником&quot; (status=5) а &quot;Не подготовлен&quot; (act_status=1).</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Исковое производство</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подготовлен&quot; (2) а &quot;Подан&quot; (3);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Определение о рассмотрении по сущ.&quot; (7) а &quot;Удовлетворение иска&quot; (8);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Определение о рассмотрении по сущ.&quot; (7) а &quot;Отказ в удовлетворении иска&quot; (9);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подана апелляция&quot; (10) а &quot;Решение Суда обжаловано&quot; (11);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подана кассация&quot; (31) а &quot;Решение Суда обжаловано&quot; (11);</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&quot;Подан надзор&quot; (37) а &quot;Решение Суда обжаловано&quot; (11).</span></p><p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_heading5" style="background-color: #ebf2de;">Изменена печатная форма &quot;Исковое заявление&quot;</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В модуле &quot;Конструктор документов судебной работы&quot; находится форма &quot;Исковое заявление&quot;. В ней осуществлены следующие изменения</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Сумма взыскания&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Сумма взыскания рассчитывается как сумма компонентов долга:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">NUMBER_VALUE_2 + NUMBER_VALUE_1 + NUMBER_VALUE_10 + NUMBER_VALUE_12 + NUMBER_VALUE_11</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6" style="background-color: #ebf2de;">Порядок перечисления составляющих долга</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Перечисление составляющих долга идет в указанном порядке:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по процентам — NUMBER_VALUE_2;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по основному долгу — NUMBER_VALUE_1;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по неустойкам — NUMBER_VALUE_10;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по комиссиям — NUMBER_VALUE_12;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по страховкам — NUMBER_VALUE_11.</span></p><p style="text-align: justify; text-indent: 0; page-break-after: avoid; padding-left: 0.2500in; margin: 0.1667in 0 0.0833in 0;"><span class="f_heading5" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_heading5" style="background-color: #ebf2de;">Модуль &quot;Карточка судебной работы&quot;</span></p><p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В модуле &quot;Карточка судебной работы&quot; как в приказном, так и в исковом производстве список составляющих долга выводится в определенном порядке:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по процентам — NUMBER_VALUE_2;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по основному долгу — NUMBER_VALUE_1;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по неустойкам — NUMBER_VALUE_10;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по комиссиям — NUMBER_VALUE_12;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;">Задолженность по страховкам — NUMBER_VALUE_11.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

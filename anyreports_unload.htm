@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Формирование произвольных отчетов</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Формирование произвольных отчетов</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="reports.htm">Отчеты</a> &gt; <a href="anyreports.htm">Произвольные отчеты</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Формирование произвольных отчетов</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="anyreports_unloadsql.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="anyreports.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="customreport_api.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Настроенный отчет может быть выведен в файл формата MS Excel, CSV или на экран. Этот процесс называется формированием отчета.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если отчет был <a href="anyreport_form_fastreport.htm" class="topiclink">сохранен в формате FastReport</a>, то есть также возможность выгрузки его в FastReport.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы сформировать отчет выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме <a href="anyreports_viewlist.htm#pictureform_reports" class="topiclink">Произвольные отчеты</a> выберите отчет в списке.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">Сформировать</span><span class="f_ListNumber"> и в раскрывшемся меню выберите способ вывода.</span></p><p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">: если при создании отчета был задан некорректный SQL-запрос, будет выдано соответствующее сообщение и отчет сформирован не будет.</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Если отчет имеет входные параметры, введите их значения в открывшейся форме и нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">. Обязательные поля отмечены звездочками. Примеры значений входных параметров приведены в разделе <a href="anyreports_inputparams_example.htm" class="topiclink">Примеры входных параметров различных типов</a>.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:1.9167in;height:0.9792in" href="form_reports_generate_inputparams.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_reports_generate_inputparams_zoom50" style="border:none;width:1.9167in;height:0.9792in" src="form_reports_generate_inputparams_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Если был выбран вывод сформированного отчета на экран, откроется форма с данными, отобранными в соответствии с SQL-запросом.</span><br>
+<span class="f_ListNumber">Если было выбрано формирование отчета в </span>формате MS Excel, CSV, откроется <span class="f_ListNumber">стандартное диалоговое окно Windows. Укажите путь, куда требуется сохранить файл, и нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">Save</span><span class="f_ListNumber"> (</span><span class="f_ListNumber" style="font-weight: bold;">Сохранить</span><span class="f_ListNumber">). По окончании выгрузки данных в файл будет выдано соответствующее сообщение.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_reports_generate_inputparams_zoom50.png','hm.src1','form_reports_generate_inputparams.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

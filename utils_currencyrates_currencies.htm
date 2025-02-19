@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Управление списком валют</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Управление списком валют</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="utils.htm">Утилиты</a> &gt; <a href="utils_currencyrates.htm">Курсы валют</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Управление списком валют</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="utils_currencyrates_view.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="utils_currencyrates.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="utils_currencyrates_add.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Управление списком валют доступно в форме </span><span class="f_BodyText" style="font-weight: bold;">Список валют</span><span class="f_BodyText">, которая откроется, если в форме <a href="utils_currencyrates_view.htm#pictureform_currencies" class="topiclink">Курсы валют</a> нажать кнопку</span><span class="f_BodyText" style="font-weight: bold;"> Валюты</span><span class="f_BodyText">. Форма доступна только тем операторам, в роли которых доступ CUR_EXCH_FULL имеет значение TRUE. В форме доступны операции добавления, редактирования, удаления валют.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Первым номером в списке валют указана <a href="glossary.htm#system_currency" class="topiclink">основная валюта Системы</a>, в которую могут конвертироваться суммы в других валютах.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="list" class="hmanchor"></a><span class="f_heading5">Список валют</span></p>
+<p class="p_ImageCaption"><a name="pictureform_currencies_currlist" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:2.2604in;height:2.0000in" href="form_currencies_currlist.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_currencies_currlist_zoom50" style="border:none;width:2.2604in;height:2.0000in" src="form_currencies_currlist_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Добавление валюты</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы добавить валюту в список, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В</span><span class="f_ListNumber" style="font-weight: bold;"> </span><span class="f_ListNumber">форме <a href="utils_currencyrates_currencies.htm#pictureform_currencies_currlist" class="topiclink">Список валют</a> нажмите кнопку <img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В открывшейся форме заполните следующие поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Наименование</span><span class="f_ListBullet2"> — название валюты. Поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Краткое обозначение</span><span class="f_ListBullet2"> — поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Код ЦБР</span><span class="f_ListBullet2"> — код Центрального банка России.</span></p><p class="p_ImageCaption"><a name="pictureform_currencies_currlist_add" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:0.9896in;height:1.2292in" href="form_currencies_currlist_add.png"><img id="TOGGLE0186A2" class="image-toggle" alt="form_currencies_currlist_add_zoom50" style="border:none;width:0.9896in;height:1.2292in" src="form_currencies_currlist_add_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">. Валюта будет добавлена в список.</span></p><p class="p_BodyText"><span class="f_ListNumber">В результате добавления валюты автоматически добавляются соответствующие записи в словарях № 280 &quot;Валюта (Полное наименование)&quot; и № 277 &quot;Валюта (Краткое обозначение)&quot;.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">При поддержке мультиязычности термин добавляется для всех языков</span><span class="f_BodyText" style="background-color: #ebf2de;">, которые перечислены в константе&nbsp;<a href="constants_constlist_technical.htm#multilanguage.supportedlanguagelist" class="topiclink">MultiLanguage.SupportedLanguageList</a></span><span class="f_BodyText">. После успешного добавления пользователю выводится сообщение:</span></p>
+<p class="p_BodyText"><span class="f_Emphasis">ВНИМАНИЕ! Не забудьте отредактировать наименование новой валюты на каждом языке в словарях &nbsp;№ 280 &quot;Валюта (Полное наименование)&quot; и № 277 &quot;Валюта (Краткое обозначение)&quot;.</span></p>
+<p class="p_ListNumber"><a class="imagetogglelink" style="margin:0;width:2.1667in;height:0.7917in" href="wind_currency_add_multilang.png"><img id="TOGGLE0186A3" class="image-toggle" alt="wind_currency_add_multilang_zoom50" style="border:none;width:2.1667in;height:0.7917in" src="wind_currency_add_multilang_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Редактирование валюты</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы отредактировать данные о валюте, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме <a href="utils_currencyrates_currencies.htm#pictureform_currencies_currlist" class="topiclink">Список валют</a> выберите нужную запись и нажмите кнопку <img alt="btn_edit_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_edit_i.png"/>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В <a href="utils_currencyrates_currencies.htm#pictureform_currencies_currlist_add" class="topiclink">форме редактирования данных о валюте</a> измените необходимые данные.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">, чтобы сохранить изменения.</span></p><p class="p_BodyText"><span class="f_BodyText">При редактировании валюты автоматически изменяются соответствующие термины </span><span class="f_ListNumber">в словарях № 280 &quot;Валюта (Полное наименование)&quot; и № 277 &quot;Валюта (Краткое обозначение)&quot;. </span><span class="f_BodyText">Код терминов = currency.id.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Если включена поддержка мультиязычности, то изменяются только соответствующие термины на языке пользователя, а не на всех языках.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">При редактировании валюты изменения в таблице currency по полям name и short_name осуществляются только, если язык пользователя = основному языку системы, установленному в константе MultiLanguage.SupportedLanguageList.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Удаление валюты</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для удаления доступны только те валюты, в которых нет долгов. При попытке удалить валюту при наличии выраженных в ней долгов будет показано предупреждение и валюта не будет удалена.</span></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:1.7708in;height:0.5417in" href="wind_currencies_currlist.png"><img id="TOGGLE0186A4" class="image-toggle" alt="wind_currencies_currlist_zoom50" style="border:none;width:1.7708in;height:0.5417in" src="wind_currencies_currlist_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы удалить данные о валюте, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме <a href="utils_currencyrates_currencies.htm#pictureform_currencies_currlist" class="topiclink">Список валют</a> выберите нужную запись.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку <img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">В открывшемся диалоговом окне нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">Yes</span><span class="f_ListNumber">, чтобы подтвердить удаление.</span></p><p class="p_BodyText"><span class="f_ListNumber">В результате удаления валюты автоматически удаляются соответствующие записи в словарях № 280 &quot;Валюта (Полное наименование)&quot; и № 277 &quot;Валюта (Краткое обозначение)&quot;.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_currencies_currlist_zoom50.png','hm.src1','form_currencies_currlist.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','form_currencies_currlist_add_zoom50.png','hm.src1','form_currencies_currlist_add.png');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','wind_currency_add_multilang_zoom50.png','hm.src1','wind_currency_add_multilang.png');
+HMInitToggle('TOGGLE0186A4','hm.type','picture','hm.state','0','hm.src0','wind_currencies_currlist_zoom50.png','hm.src1','wind_currencies_currlist.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

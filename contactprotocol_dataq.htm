@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Просмотр данных по верификации адресов через интегрированный сервис DaData (заявки, статусы выполнения обработки и т.д.)</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Просмотр данных по верификации адресов через интегрированный сервис DaData</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="contactprotocol.htm">Протокол контактов</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Просмотр данных по верификации адресов через интегрированный сервис DaData</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="contactprotocol_smsappls_view.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="contactprotocol.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="contactprotocol_android.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <p id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections">Show/Hide Hidden Text</a></p>
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">DaData — это внешний сервис, интегрированный в систему, который работает по следующему алгоритму. В очередь поступают заявки на проверку адресов через DaData. В ответ внешняя сервис возвращает этот же адрес, но с исправленными ошибками, привязкой к KLADR и статусом DaData (см. словарь № 72). Статус DaData показывает, на какие адреса не следует отправлять письма.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Заявки на проверку адресов через DaData формируются в модуле &quot;Исходящее информирование&quot; (см. <a href="outgoinginform_clearaddresses.htm" class="topiclink">Верификация адресов должников через интегрированный сервис DaData</a>).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Данные по верификации адресов через интегрированный сервис DaData отображаются на вкладке </span><span class="f_BodyText" style="font-weight: bold;">DaData</span><span class="f_BodyText">. При открытии формы список отображается пустым. Нажмите кнопку </span><span class="f_BodyText" style="font-weight: bold;">Найти</span><span class="f_BodyText">, чтобы вывести в список все записи за установленный по умолчанию период, или предварительно настройте условия фильтра для отбора записей.</span></p>
+<p><a class="imagetogglelink" style="margin:0;width:5.2396in;height:3.4583in" href="form_protocolcontact_dataq.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_protocolcontact_dataq_zoom50" style="border:none;width:5.2396in;height:3.4583in" src="form_protocolcontact_dataq_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_Greytoggle"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Описание полей списка</a></span></p>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BodyText"><span class="f_BodyText">Данные о проверке адресов отображаются в следующих полях списка:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Статус заявки — </span><span class="f_ListBullet2">см. словарь № 84;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Текущий адрес</span><span class="f_ListBullet2"> — адрес, полученный из сервиса DaData;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Старый адрес</span><span class="f_ListBullet2"> — проверяемый адрес должника;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Статус адреса по DaData</span><span class="f_ListBullet2"> — см. словарь № 72;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Текст ошибки</span><span class="f_ListBullet2"> — значение возвращается сервисом DaData.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="Кликните, чтобы развренуть или свернуть список" title="Кликните, чтобы развренуть или свернуть список" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните, чтобы развренуть или свернуть список" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Описание статусов адреса по DaData</a></span></p>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.1042in;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:1.1979in; height:0.4375in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Код словаря № 72</span></p>
+</td>
+<td style="vertical-align:middle; width:5.0417in; height:0.4375in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Код DaData</span></p>
+</td>
+<td style="vertical-align:middle; width:11.6875in; height:0.4375in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Описание</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">1</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000; border-top:none;"><p class="p_In_Table"><span class="f_In_Table">VALIDATED</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000; border-top:none;"><p class="p_In_Table"><span class="f_In_Table">Адрес был распознан гарантировано правильно</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">2</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_EMPTY_SOURCE</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Исходный адрес был пустым</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">3</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_AMBI</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Имеется несколько вариантов разбора адреса</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">4</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_UNPARSED_PARTS</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Для некоторых частей исходного адреса не было найдено соответствия в результате разбора</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">5</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_ASSUMPTION</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Для улицы, населённого пункта или города результирующего адреса не найдено однозначного соответствия в исходном адресе</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">6</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_NO_MAIN_POINTS</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес не содержит ни города, ни населённого пункта, ни индекса</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">7</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_NUMBER_STREET_ASSUMPTION</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес не позволяет точно определить, что в нём указано – улица и номер дома или номерная улица</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">8</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HAS_NO_KLADR_RECORD</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">В процессе распознавания, помимо КЛАДР, была также использована информация из дополнительных справочников ФАКТОР</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">9</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_EXCEDED_HOUSE_NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Указан слишком большой номер дома</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">10</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_INCORRECT_HOUSE_EXTENSION</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Формат записи номера одной из частей расширения дома в результирующем адресе не соответствует стандарту ФАКТОР</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">11</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HOUSE_WITHOUT_STREET_OR_NP</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес содержит номер дома, но не содержит улицы или населённого пункта, к которому он относится</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">12</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_HOUSE_EXTENSION_WITHOUT_HOUSE</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.1979in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес содержит части расширения дома, но не содержит номер дома, к которому они относятся</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.1979in; height:0.4167in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">13</span></p>
+</td>
+<td style="vertical-align:top; width:5.0417in; height:0.4167in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">NOT_VALIDATED_INCORRECT_ZELENOGRAD_KORPUS</span></p>
+</td>
+<td style="vertical-align:top; width:11.6875in; height:0.4167in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">В адресе указан город Зеленоград, не указана улица и указан дом или корпус с номером меньшим, чем минимальный номер корпуса, найденного в текущей версии КЛАДР для пустой улицы (некорректный для Зеленограда корпус)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_protocolcontact_dataq_zoom50.png','hm.src1','form_protocolcontact_dataq.png');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

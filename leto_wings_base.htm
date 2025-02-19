@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Интеграция с WINGS</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Интеграция с WINGS</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   &raquo;No topics above this level&laquo;
+   </p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Интеграция с WINGS</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <img src="hm_btn_navigate_prev_d.png" border="0"
+        ><a href="debug_info.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><img src="hm_btn_navigate_next_d.png" border="0">
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Постановка:: http:://repository/svn/debtcontrol/Documents/Технические задания/Летобанк/WINGS/ТЗ_ПочтаБанк_Интеграция с WINGS.docx</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Задача на разработку интеграции 26211.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">В рамках интеграции с WINGS сделано, в частности, следующее:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;"><a href="leto_wings_base.htm#1" class="topiclink">Триггеры для поддержки интеграции с WINGS</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;"><a href="leto_wings_base.htm#2" class="topiclink">Актуализация статусов SMS и EMAIL</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="background-color: #ebf2de;"><a href="leto_wings_base.htm#3" class="topiclink">Проблема с передачей данных в WINGS</a>. — доработка (задача 26768)</span></p><p class="p_heading5" style="page-break-after: avoid;"><a name="1" class="hmanchor"></a><span class="f_heading5" style="background-color: #ebf2de;">Триггеры для поддержки интеграции с WINGS</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Удалены триггеры:</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CONTACT.TR_AU_DEBT_SMS;</span></p><p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CONTACT.TR_AI_DEBT_SMS.</span></p><p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Вместо них добавлены триггеры:</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">TR_DEBT_SMS_POCHTA_AI;</span></p><p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">TR_DEBT_EMAIL_POCHTA_AI.</span></p><p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Описание работы триггера TR_DEBT_SMS_POCHTA_AI</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">После вставки в таблицу &quot;Сообщения должнику&quot; (DEBT_SMS) новой записи осуществляется вставка новой записи в таблицу LTB_EVENT_SOURCE, расположенную в схеме S_WINGS (S_WINGS. LTB_EVENT_SOURCE). Полученный идентификатор LTB_EVENT_SOURCE.ID требуется сохранить в поле &quot;Идентификатор во внешней системе&quot; (DEBT_SMS.SMS_ID$.)</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Правила заполнения полей таблицы LTB_EVENT_SOURCE — см.&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; color: #4f81bd; background-color: #ebf2de;">Таблица 4</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">.</span></p>
+<p style="text-align: center; text-indent: 0.2396in; page-break-after: avoid; margin: 0.2500in 0 0.0833in 0;"><span style="font-weight: bold; background-color: #ebf2de;">Таблица 4. Заполнение полей таблицы LTB_EVENT_SOURCE при добавлении SMS.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Поле в LTB_EVENT_SOURCE</span></p>
+</th>
+<th style="vertical-align:top; width:1.0313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Формат поля</span></p>
+</th>
+<th style="vertical-align:top; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Поле в БД Контакта</span></p>
+</th>
+<th style="vertical-align:top; width:1.3333in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Описание</span></p>
+</th>
+<th style="vertical-align:top; width:1.0313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Пример</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CREATE_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">SYSDATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата создания.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается текущая дата</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CASE_TYPE_ID</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_MSG.CUR_INDEX</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Код события.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается номер, указанный в шаблоне.</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">3434</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MSISDN</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(20 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">PHONE.NUMBER2</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Номер телефона</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">79997776655</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CLIENT_ID </span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">PERSON.EXT_ID$</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Идентификатор клиента</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">72264</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEAL_LOAN_ID </span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(40 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT.CONTRACT</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Номер договора</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">10042332</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_DETAILS</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(4000 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_SMS.TEXT</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Набор параметров события.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается текст сообщения.&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">%PARAM1%='1234'; %PARAM2%='qwerty'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">STATUS</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">0</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">0 - новое событие, по умолчанию, 1,2 статус проставляет Wings. При вставке проставляем 0.</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(10 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата из DEBT_SMS.START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата начала отложенной отправки сообщения</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">2016-08-19</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">START_TIME</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(5 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Время из DEBT_SMS.START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Время начала отложенной отправки сообщения</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">09:30</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CUSTOM_FIELD1</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_SMS.ID</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Числовое поле, которое может содержать дополнительные данные.&nbsp;</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается ID SMS-сообщения в системе &quot;Контакт&quot;</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">123</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">SOURCE_SYSTEM</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Система-источник</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">‘CONTACT’</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Описание работы триггера TR_DEBT_ EMAIL _POCHTA_AI</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">После вставки в таблицу &quot;email-сообщения&quot; (DEBT_EMAIL) новой записи осуществляется вставка новой записи в таблицу LTB_EVENT_SOURCE, расположенную в схеме S_WINGS (S_WINGS. LTB_EVENT_SOURCE). Полученный идентификатор LTB_EVENT_SOURCE.ID требуется сохранить в поле &quot;Идентификатор во внешней системе&quot; (DEBT_ EMAIL.EMAIL _ID$.)</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Правила заполнения полей таблицы LTB_EVENT_SOURCE — см.&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; color: #4f81bd; background-color: #ebf2de;">Таблица 5</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">.</span></p>
+<p style="text-align: center; text-indent: 0.2396in; page-break-after: avoid; margin: 0.2500in 0 0.0833in 0;"><span style="font-weight: bold; background-color: #ebf2de;">Таблица 5. Заполнение полей таблицы LTB_EVENT_SOURCE при добавлении Email.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Поле в LTB_EVENT_SOURCE</span></p>
+</th>
+<th style="vertical-align:top; width:1.0313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Формат поля</span></p>
+</th>
+<th style="vertical-align:top; width:1.4271in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Поле в БД Контакта</span></p>
+</th>
+<th style="vertical-align:top; width:1.3333in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Описание</span></p>
+</th>
+<th style="vertical-align:top; width:1.0313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Пример</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CREATE_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">SYSDATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата создания.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается текущая дата</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CASE_TYPE_ID</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_MSG.CUR_INDEX</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Код события.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается номер, указанный в шаблоне.</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">3434</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">EMAIL</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(50 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_EMAIL.EMAIL</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Номер телефона</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">joecole34@mail.ru</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CLIENT_ID </span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">PERSON.EXT_ID$</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Идентификатор клиента</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">72264</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEAL_LOAN_ID </span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(40 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT.CONTRACT</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Номер договора</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">10042332</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_DETAILS</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(4000 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_EMAIL.TEXT</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Набор параметров события.</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается текст сообщения.&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">%PARAM1%='1234'; %PARAM2%='qwerty'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">STATUS</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">0</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">0 - новое событие, по умолчанию, 1,2 статус проставляет Wings. При вставке проставляем 0.</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(10 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата из DEBT_EMAIL.START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Дата начала отложенной отправки сообщения</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">2016-08-19</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">START_TIME</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">VARCHAR2(5 CHAR)</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Время из DEBT_EMAIL.START_DATE</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Время начала отложенной отправки сообщения</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">09:30</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">CUSTOM_FIELD2</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NUMBER</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">DEBT_EMAIL.ID</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Числовое поле, которое может содержать дополнительные данные.&nbsp;</span></p>
+<p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Передается ID EMAIL-сообщения в системе &quot;Контакт&quot;</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">123</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">SOURCE_SYSTEM</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.4271in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:1.3333in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Система-источник</span></p>
+</td>
+<td style="vertical-align:top; width:1.0313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">‘CONTACT’</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-indent: -0.2500in; page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><a name="2" class="hmanchor"></a><span class="f_heading5" style="background-color: #ebf2de;">Актуализация статусов SMS и EMAIL</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Созданы процедуры, осуществляющие актуализацию статусов SMS и Email. Процедуры запускаются в фоновом режиме с интервалом 15 минут.</span></p>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Актуализация статусов SMS</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Проверяются SMS, находящиеся в статусах 5 &quot;Заявка&quot; или 6 &quot;В процессе отправки&quot; (см. словарь № 50 &quot;Состояние SMS&quot;).</span></p>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Обновление статуса</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Если с даты отправки SMS прошло не более 7 дней, то статус SMS обновляется согласно значению в поле MESSAGE_STATUS в таблице S_WINGS.MESSAGE_STATUSES.&nbsp;</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Нужная запись определяется по следующим правилам:</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_STATUSES.EVENT_ID=DEBT_SMS.SMS_ID$;</span></p><p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_STATUSES.MESSAGE_TYPE=’sms’.</span></p><p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Новый статус устанавливается по следующему соответствию — см.&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; color: #4f81bd; background-color: #ebf2de;">Таблица 6</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">.</span></p>
+<p style="text-align: center; text-indent: 0.2396in; page-break-after: avoid; margin: 0.2500in 0 0.0833in 0;"><span style="font-weight: bold; background-color: #ebf2de;">Таблица 6.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:2.1146in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">MESSAGE_STATUS</span></p>
+</th>
+<th style="vertical-align:top; width:1.5313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Код в Контакте (словарь № 50)</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">New</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">5</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Submitted</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">6</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Transmitted</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Delivered</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Failed</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">7</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Rejected</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">8</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Expired</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">9</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">NotDelivered</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.1146in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Paused</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">6</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Установка статуса &quot;Ошибка отправки&quot;</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Если с даты отправки SMS прошло более 7 дней, то статус SMS обновляется на статус 7 &quot;Ошибка отправки&quot;.</span></p>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Актуализация статусов EMAIL</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Проверяются Email, находящиеся в статусе 1 &quot;Заявка&quot; (см. словарь № 65 &quot;Состояние Email&quot;).</span></p>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Обновление статуса</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Если с даты отправки Email прошло не более 7 дней, то статус Email обновляется согласно значению в поле MESSAGE_STATUS в таблице S_WINGS.MESSAGE_STATUSES.&nbsp;</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Нужная запись определяется по следующим правилам:</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_STATUSES.EVENT_ID=DEBT_ EMAIL.EMAIL_ID$;</span></p><p style="text-align: justify; text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:12pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">MESSAGE_STATUSES.MESSAGE_TYPE=’email’.</span></p><p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Новый статус устанавливается по следующему соответствию — см.&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; color: #4f81bd; background-color: #ebf2de;">Таблица 7</span><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">.</span></p>
+<p style="text-align: center; text-indent: 0.2396in; page-break-after: avoid; margin: 0.2500in 0 0.0833in 0;"><span style="font-weight: bold; background-color: #ebf2de;">Таблица 7.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:2.0208in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">MESSAGE_STATUS</span></p>
+</th>
+<th style="vertical-align:top; width:1.5313in; background-color:#BFBFBF; padding:0.0417in; border:solid thin #000000;"><p style="text-align: center; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; font-weight: bold; background-color: #ebf2de;">Код в Контакте (словарь № 65)</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">New</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Error</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">4</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Sent to provider</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Received by provider</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Letter created</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.0208in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Expired</span></p>
+</td>
+<td style="vertical-align:top; width:1.5313in; padding:0.0417in; border:solid thin #000000;"><p style="text-align: justify; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">3</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="page-break-after: avoid; margin: 0.1667in 0 0.0833in 0.2500in;"><span style="font-size: 13pt; font-family: 'Times New Roman',Times,Georgia,serif; font-style: italic; font-weight: bold; background-color: #ebf2de;">Установка статуса &quot;Ошибка отправки&quot;</span></p>
+<p style="text-align: justify; text-indent: 0.2396in; margin: 0.0417in 0 0.0833in 0;"><span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif; background-color: #ebf2de;">Если с даты отправки EMAIL прошло более 7 дней, то статус SMS обновляется на статус 3 &quot;Не доставлено&quot;.</span></p>
+<p class="p_heading5" style="page-break-after: avoid;"><a name="3" class="hmanchor"></a><span class="f_heading5" style="background-color: #ebf2de;">Проблема с передачей данных в WINGS</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Постановка по задаче 26768:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">1. &nbsp; &nbsp; &nbsp; &nbsp;Требуется доработка триггера TR_DEBT_SMS_POCHTA_AI:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Добавлять запись в таблицу S_WINGS.LTB_EVENT_SOURCE требуется только, если статус смс = &quot;Заявка&quot; и Дата отправки не пустая: (:new.status = 5) and (:new.start_date is not null)</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">2. &nbsp; &nbsp; &nbsp; &nbsp;Требуется создать новый триггера на debt_sms после update - TR_DEBT_SMS_POCHTA_AU:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Реализовать алгоритм действий, аналогичный в триггере на insert, только его выполнять следует только, если статус смс = &quot;Заявка&quot; и Дата отправки не пустая и до этого статус смс был не равен &quot;Заявка&quot; или дата отправки была пустая: (:new.status = 5) and (:new.start_date is not null) and ((:old.status&lt;&gt;5) or (:old.start_date is null))</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">3. &nbsp; &nbsp; &nbsp; &nbsp;Требуется доработка триггера TR_DEBT_EMAIL_POCHTA_AI:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Добавлять запись в таблицу S_WINGS.LTB_EVENT_SOURCE требуется только, если статус email = &quot;Заявка&quot; и Дата отправки не пустая: (:new.status = 1) and (:new.start_date is not null)</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">4. &nbsp; &nbsp; &nbsp; &nbsp;Требуется создать новый триггера на debt_email после update - TR_DEBT_EMAIL_POCHTA_AU:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Реализовать алгоритм действий, аналогичный в триггере на insert, только его выполнять следует только, если статус email = &quot;Заявка&quot; и Дата отправки не пустая и до этого статус email был не равен &quot;Заявка&quot; или дата отправки была пустая: (:new.status = 1) and (:new.start_date is not null) and ((:old.status&lt;&gt;1) or (:old.start_date is null))</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">5. &nbsp; &nbsp; &nbsp; &nbsp;Требуется доработка job_schedule_group_event_3x, мероприятия по формированию Email:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="background-color: #ebf2de;">Требуется, чтобы вставка записей в debt_email происходила со статусом 0. И только после email_text_upd они должны переводится в статус 1.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

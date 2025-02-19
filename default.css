@@ -1,0 +1,499 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_BodyText /* Body Text */
+{
+}
+span.f_caption /* caption */
+{
+ font-weight: bold;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Emphasis /* Emphasis */
+{
+ font-style: italic;
+}
+span.f_Greytoggle /* Grey toggle */
+{
+}
+span.f_heading1 /* heading 1 */
+{
+ font-size: 16pt;
+ font-weight: bold;
+ color: #17365d;
+}
+span.f_heading2 /* heading 2 */
+{
+ font-size: 15pt;
+ font-weight: bold;
+ color: #17365d;
+}
+span.f_heading3 /* heading 3 */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #17365d;
+}
+span.f_heading4 /* heading 4 */
+{
+ font-size: 13pt;
+ font-weight: bold;
+ color: #17365d;
+}
+span.f_heading5 /* heading 5 */
+{
+ font-size: 12pt;
+ font-weight: bold;
+ color: #17365d;
+}
+span.f_heading6 /* heading 6 */
+{
+ font-size: 11pt;
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_heading7 /* heading 7 */
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman',Times,Georgia,serif;
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_heading8 /* heading 8 */
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman',Times,Georgia,serif;
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 16pt;
+ font-weight: bold;
+}
+span.f_Hyperlink /* Hyperlink */
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_In_Table /* In_Table */
+{
+}
+span.f_In_Table_Header /* In_Table_Header */
+{
+ font-weight: bold;
+ background-color: #c0c0c0;
+}
+span.f_ListBullet2 /* List Bullet 2 */
+{
+}
+span.f_ListBullet3 /* List Bullet 3 */
+{
+}
+span.f_ListNumber /* List Number */
+{
+}
+span.f_ListNumber2 /* List Number 2 */
+{
+}
+span.f_ListNumberX /* List Number X */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_quote_my /* quote_my */
+{
+ font-style: italic;
+ color: #000080;
+}
+span.f_toc1 /* toc 1 */
+{
+ font-size: 12pt;
+ color: #17365d;
+}
+span.f_toc2 /* toc 2 */
+{
+ font-size: 11pt;
+ color: #17365d;
+}
+span.f_toc4 /* toc 4 */
+{
+ font-size: 11pt;
+}
+span.f_Заявка_aeлякого /* Заявка - для кого */
+{
+ font-style: italic;
+ color: #808080;
+}
+span.f_Заявка_номер /* Заявка - номер */
+{
+ font-style: italic;
+ color: #808080;
+}
+span.f_Кнопка /* Кнопка */
+{
+ font-weight: bold;
+}
+span.f_Кнопкакурсив /* Кнопка курсив */
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_Маркированныйузкий2 /* Маркированный узкий 2 */
+{
+ font-style: italic;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_BodyText /* Body Text */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: 0.2500in;
+ line-height: 1.32;
+ margin: 0.0521in 0 0.0417in 0;
+}
+.p_caption /* caption */
+{
+ font-size: 10pt;
+ margin: 0.0833in 0 0.2500in 0.3958in;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 10pt;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+}
+.p_Comment /* Comment */
+{
+ font-size: 10pt;
+}
+.p_Greytoggle /* Grey toggle */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: 0.2500in;
+ line-height: 1.80;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: thin;
+ background: #e6e6e6;
+ margin: 0.0833in 0 0.0833in 0;
+}
+.p_heading1 /* heading 1 */
+{
+ font-size: 16pt;
+ text-align: center;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.3333in 0 0.0833in 0;
+}
+.p_heading2 /* heading 2 */
+{
+ font-size: 15pt;
+ text-align: justify;
+ page-break-after: avoid;
+ margin: 0.1667in 0 0.0833in 0;
+}
+.p_heading3 /* heading 3 */
+{
+ font-size: 14pt;
+ text-align: justify;
+ page-break-after: avoid;
+ margin: 0.1667in 0 0.0833in 0;
+}
+.p_heading4 /* heading 4 */
+{
+ font-size: 13pt;
+ text-align: justify;
+ text-indent: -0.2500in;
+ page-break-after: avoid;
+ margin: 0.1667in 0 0.0833in 0.2500in;
+}
+.p_heading5 /* heading 5 */
+{
+ font-size: 12pt;
+ text-align: justify;
+ text-indent: -0.2708in;
+ page-break-after: avoid;
+ margin: 0.1667in 0 0.0833in 0.2708in;
+}
+.p_heading6 /* heading 6 */
+{
+ font-size: 11pt;
+ text-align: justify;
+ text-indent: -0.2708in;
+ page-break-after: avoid;
+ margin: 0.0833in 0 0.0833in 0.2708in;
+}
+.p_heading7 /* heading 7 */
+{
+ font-size: 12pt;
+ text-align: right;
+ text-indent: 0.7708in;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.1042in 0 0.1042in 0;
+}
+.p_heading8 /* heading 8 */
+{
+ font-size: 12pt;
+ text-indent: 0.1979in;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 0.1042in 0 0.1042in 0;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ margin: 0.0208in 0 0.0208in 0;
+}
+.p_In_Table /* In_Table */
+{
+ font-size: 10pt;
+ margin: 0 0 0 0.1042in;
+}
+.p_In_Table_Header /* In_Table_Header */
+{
+ font-size: 10pt;
+ text-align: center;
+}
+.p_ListBullet2 /* List Bullet 2 */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.2396in;
+ line-height: 1.32;
+ margin: 0.0521in 0 0.0417in 0.4896in;
+}
+.p_ListBullet3 /* List Bullet 3 */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.2396in;
+ line-height: 1.32;
+ margin: 0.0417in 0 0.0417in 0.7396in;
+}
+.p_ListNumber /* List Number */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.2500in;
+ line-height: 1.32;
+ margin: 0.0521in 0 0.0417in 0.2500in;
+}
+.p_ListNumber2 /* List Number 2 */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.2396in;
+ line-height: 1.32;
+ page-break-after: avoid;
+ margin: 0.0521in 0 0.0417in 0.4896in;
+}
+.p_ListNumberX /* List Number X */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.3125in;
+ line-height: 1.32;
+ page-break-after: avoid;
+ margin: 0.0521in 0 0.0417in 0.5625in;
+}
+.p_Notes /* Notes */
+{
+ font-size: 10pt;
+}
+.p_quote_my /* quote_my */
+{
+ font-size: 10pt;
+ text-align: justify;
+ line-height: 1.32;
+ border-color: #000000;
+ border-style: solid;
+ border-width: thin;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 0.0521in 0.0521in 0.0521in 0.0521in;
+ margin: 0 0 0 0.2188in;
+}
+.p_toc1 /* toc 1 */
+{
+ font-size: 12pt;
+ margin: 0.1667in 0.4688in 0.0833in 0;
+}
+.p_toc2 /* toc 2 */
+{
+ font-size: 11pt;
+ text-indent: -0.1979in;
+ margin: 0.0833in 0 0.0833in 0.3438in;
+}
+.p_toc4 /* toc 4 */
+{
+ font-size: 11pt;
+ margin: 0.0417in 0.4688in 0.0417in 0.2500in;
+}
+.p_Заявка_aeлякого /* Заявка - для кого */
+{
+ font-size: 10pt;
+ page-break-after: avoid;
+ background: #dbe5f1;
+}
+.p_Заявка_номер /* Заявка - номер */
+{
+ font-size: 10pt;
+ text-align: right;
+ page-break-after: avoid;
+ background: #dbe5f1;
+}
+.p_Кнопка /* Кнопка */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: 0.2500in;
+ line-height: 1.32;
+ margin: 0.0521in 0 0.0417in 0;
+}
+.p_Кнопкакурсив /* Кнопка курсив */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: 0.2500in;
+ line-height: 1.32;
+ margin: 0.0521in 0 0.0417in 0;
+}
+.p_Маркированныйузкий2 /* Маркированный узкий 2 */
+{
+ font-size: 10pt;
+ text-align: justify;
+ text-indent: -0.2396in;
+ line-height: 1.32;
+ margin: 0.0417in 0 0.0417in 0.4896in;
+}
+/* Table styles */
+table.MyTable {
+ border: solid 0.0208in;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.MyTable tr.MyTable {
+ text-align: left;
+}
+table.MyTable th.MyTable, table.MyTable td.MyTable {
+ vertical-align: top;
+ padding: 0;
+ border: solid thin;
+}
+table.MyTable th.MyTable {
+ background-color:#c0c0c0;
+}
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+a.imagetogglelink {
+  position: relative;
+  display: inline-block;
+}
+svg.image-toggle-magnifier { /* Magnifier icon for image toggles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40pt;
+  height: 40pt;
+  max-width: 80%;
+  max-height: 80%;
+  fill: #FFFFFF;
+  stroke: #808080;
+  stroke-width: 0.5pt;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+img.image-toggle:hover + svg.image-toggle-magnifier, svg.image-toggle-magnifier:hover {
+  opacity: 1;
+}
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }

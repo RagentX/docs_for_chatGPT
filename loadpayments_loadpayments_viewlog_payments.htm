@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Данные в логе о загрузке платежей</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Данные в логе о загрузке платежей</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="loadpayments.htm">Загрузка платежей</a> &gt; <a href="loadpayments_loadpayments.htm">Формат &quot;Загрузка платежей&quot;</a> &gt; <a href="loadpayments_loadpayments_loaddatatodb.htm">Загрузка данных о платежах и остатках погашения в базу данных для формата &quot;Загрузка платежей&quot;</a> &gt; <a href="loadpayments_loadpayments_viewlog.htm">Формирование лога загрузок данных о платежах и остатков погашения</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Данные в логе о загрузке платежей</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="loadpayments_loadpayments_viewlog_rests.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="loadpayments_loadpayments_viewlog.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="loadpayments_loadpayments_viewlog_example.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Данные в файле лога о загрузке платежей формируются в следующей последовательности:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Данные о подтверждении ранее не подтвержденных платежей.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Данные о вводе новых платежей.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Данные об обновлении обещаний для новых и вновь подтвержденных платежей.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Данные об отмене намеченных выездов.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Данные о работе по правилу (для каждого правила, по которому имеется хотя бы одна запись с пустым остатком).</span></p><p class="p_BodyText"><span class="f_BodyText">При подтверждении платежа в соответствующей записи таблицы БД </span><span class="f_BodyText" style="font-style: italic;">debt_calc</span><span class="f_BodyText"> корректируются поля </span><span class="f_BodyText" style="font-style: italic;">is_confirmed</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">confirm_dt</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">report_date</span><span class="f_BodyText">. Перед подтверждением ранее не подтвержденных платежей в файле лога формируется сообщение: &quot;SaveCalc. Подтверждение неподтвержденных платежей, количество корректируемых записей в debt_calc &lt;количество записей&gt;&quot;. Если константа <a href="loadpayments_setconst.htm#loadcalcbulkinsert" class="topiclink">LoadCalcBulkInsert</a> имеет значение &quot;Ложь&quot;, то в файле лога дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;SaveCalc. Дополнительные данные о подтверждении платежей:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждому вновь подтвержденному платежу вида &quot;запись №&lt;номер записи&gt;, id debt_calc = &lt;ID платежа&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При вводе нового платежа в новой записи таблицы БД </span><span class="f_BodyText" style="font-style: italic;">debt_calc</span><span class="f_BodyText"> формируются поля </span><span class="f_BodyText" style="font-style: italic;">parent_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">dt</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">is_confirmed</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">is_cancel</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">calc_date</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">r_currency_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">int_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">report_date</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">dsc</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">confirm_dt</span><span class="f_BodyText">. Перед вводом новых платежей в файле лога формируется сообщение: &quot;SaveCalc. Ввод новых платежей, количество новых записей в debt_calc &lt;количество записей&gt;&quot;. Если константа <a href="loadpayments_setconst.htm#loadcalcbulkinsert" class="topiclink">LoadCalcBulkInsert</a> имеет значение &quot;Ложь&quot;, то в файле лога дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;SaveCalc. Дополнительные данные о новых платежах:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждому новому платежу вида &quot;запись №&lt;номер записи&gt;, id debt_calc = &lt;ID платежа&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При обновлении обещаний для новых и вновь подтвержденных платежей в таблице БД </span><span class="f_BodyText" style="font-style: italic;">debt_promise</span><span class="f_BodyText"> корректируется поле </span><span class="f_BodyText" style="font-style: italic;">cover_sum</span><span class="f_BodyText">, в таблице </span><span class="f_BodyText" style="font-style: italic;">debt_calc</span><span class="f_BodyText"> корректируется поле </span><span class="f_BodyText" style="font-style: italic;">r_promise_id</span><span class="f_BodyText">, а в таблице </span><span class="f_BodyText" style="font-style: italic;">debt</span><span class="f_BodyText"> корректируются поля </span><span class="f_BodyText" style="font-style: italic;">state</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">prev_state</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">status</span><span class="f_BodyText">. После обновления обещаний в файле лога формируется сообщение: &quot;SaveCalc. Обновление обещаний для новых и вновь подтвержденных платежей (&lt;количество обещаний&gt;)&quot;. Если константа <a href="loadpayments_setconst.htm#loadcalcbulkinsert" class="topiclink">LoadCalcBulkInsert</a> имеет значение &quot;Ложь&quot;, то в файле лога дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;SaveCalc. Дополнительные данные об обновленных обещаниях:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждому обновленному обещанию вида &quot;запись №&lt;номер записи&gt;, id debt_calc = &lt;ID платежа&gt;, id debt_promise = &lt;ID обещания&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При отмене намеченных выездов в таблице БД </span><span class="f_BodyText" style="font-style: italic;">debt_promise</span><span class="f_BodyText"> корректируется поле </span><span class="f_BodyText" style="font-style: italic;">cover_sum</span><span class="f_BodyText">, в таблице </span><span class="f_BodyText" style="font-style: italic;">visit_address</span><span class="f_BodyText"> корректируются поля </span><span class="f_BodyText" style="font-style: italic;">check_dt</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">prepare_dt</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">r_user_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">r_admin_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">purpose</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">visit_dt</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">status</span><span class="f_BodyText">, а в таблице </span><span class="f_BodyText" style="font-style: italic;">address</span><span class="f_BodyText"> корректируется поле </span><span class="f_BodyText" style="font-style: italic;">visit_state</span><span class="f_BodyText">. Перед отменой намеченных выездов в файле лога формируется сообщение: &quot;SaveCalc. Отмена намеченных выездов (&lt;количество намеченных выездов&gt;)&quot;. Если константа <a href="loadpayments_setconst.htm#loadcalcbulkinsert" class="topiclink">LoadCalcBulkInsert</a> имеет значение &quot;Ложь&quot;, то в файле лога дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;SaveCalc. Дополнительные данные об отменяемых выездах:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждому отменяемому выезду вида &quot;запись №&lt;номер записи&gt;, id debt_calc = &lt;ID платежа&gt;, id address = &lt;ID адреса&gt;, id visit_address = &lt;ID визита&gt;&quot;.</span></p><p class="p_BodyText"><span class="f_BodyText">При работе по правилу в таблице БД </span><span class="f_BodyText" style="font-style: italic;">debt</span><span class="f_BodyText"> корректируются поля </span><span class="f_BodyText" style="font-style: italic;">r_calc_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">status</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">dsc</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">debt_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">debt_sum_extra</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">debt_exp_dt</span><span class="f_BodyText">, а также соответствующая правилу выборка из полей </span><span class="f_BodyText" style="font-style: italic;">basic_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">exp_basic_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">percent_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">exp_percent_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">penalty_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">peni_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">commission_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">exp_commission_sum</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">due_sum</span><span class="f_BodyText">. В таблице </span><span class="f_BodyText" style="font-style: italic;">work_task</span><span class="f_BodyText"> корректируются поля </span><span class="f_BodyText" style="font-style: italic;">r_user_id = null</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">prior = null</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">call_time = null</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">r_contact_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">r_admin_id</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">reason</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">finish_work_date</span><span class="f_BodyText">. После работы по правилу в файле лога формируется сообщение: &quot;SaveCalc. Работа по правилу &lt;номер правила&gt;, количество корректируемых записей &lt;количество записей&gt;&quot;. Если константа <a href="loadpayments_setconst.htm#loadcalcbulkinsert" class="topiclink">LoadCalcBulkInsert</a> имеет значение &quot;Ложь&quot;, то в файле лога дополнительно формируются:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщение &quot;SaveCalc. Дополнительные данные о работе по правилу номер:&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">сообщения по каждой скорректированной записи вида &quot;запись №&lt;номер записи&gt;, id debt = &lt;ID долга&gt;, id address = &lt;ID адреса&gt;, id work_task = &lt;id work_task&gt;&quot;.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

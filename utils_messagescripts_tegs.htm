@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Подстановка переменных в текст сообщения</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Подстановка переменных в текст сообщения</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="utils.htm">Утилиты</a> &gt; <a href="utils_messagescripts.htm">Сценарии сообщений</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Подстановка переменных в текст сообщения</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="utils_messagescripts_special.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="utils_messagescripts.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="utils_messagescripts_tegs_clients.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Имеется возможность использовать в тексте сообщений переменные, вместо которых при выполнении сценария будут подставлены конкретные значения. Например, такими переменными могут быть фамилия, имя и отчество должника, размер кредита, сумма остатка и т. д.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Подстановка переменных в текст сообщений доступна для следующих типов сообщений:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2"><a href="utils_messagescripts_talks.htm" class="topiclink">Разговор</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2"><a href="utils_messagescripts_sms_view.htm" class="topiclink">SMS-сообщение</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2"><a href="utils_messagescripts_emails_view.htm" class="topiclink">Email-сообщение</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2"><a href="utils_messagescripts_autocomment.htm" class="topiclink">Автоматический комментарий</a>;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2"><a href="utils_messagescripts_special.htm" class="topiclink">Специальное</a>.</span></p><p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Для добавления переменной в текст сценария</span><span class="f_BodyText"> </span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Установите курсор в поле &quot;Текст&quot; на том месте, куда требуется вставить переменную.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Выберите нужный подстановочный тег в раскрывающемся списке соответствующего поля в нижней части формы и нажмите кнопку <img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Переменная будет добавлена в текст сценария разговора в виде %&lt;переменная&gt;%.</span></p><p class="p_ImageCaption"><a class="imagetogglelink" style="margin:0;width:1.4583in;height:0.3021in" href="pole_tegs.png"><img id="TOGGLE0186A1" class="image-toggle" alt="pole_tegs_zoom50" style="border:none;width:1.4583in;height:0.3021in" src="pole_tegs_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ImageCaption"><a class="imagetogglelink" style="margin:0;width:1.1458in;height:1.1250in" href="pole_tegs_1.png"><img id="TOGGLE0186A2" class="image-toggle" alt="pole_tegs_1_zoom50" style="border:none;width:1.1458in;height:1.1250in" src="pole_tegs_1_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Список подстановочных тегов</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Список подстановочных тегов включает настраиваемые поля. Эти поля позволяют каждой компании, использующей Систему, настроить отображение дополнительных переменных, если это требуется. Если техническое поле не настроено, оно не отображается в списке для вставки в сценарий. Чтобы настроить нужные дополнительные переменные в технических полях, обратитесь в техническую поддержку.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Кроме переменных, перечисленных в таблице ниже, настоящая версия Системы поддерживает тег вида </span>%formula&lt;ID ФОРМУЛЫ&gt;% (например: &nbsp;%formula137%). Для таких тегов используются формулы типа 9 &quot;Расчет переменной для SMS сообщения (число)&quot;, результатом действия которых является число. Этим числом и заменяется описанный тег при формировании SMS-сообщения.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 0.0208in #000000; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:3.3125in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Название переменной</span></p>
+</td>
+<td style="vertical-align:middle; width:2.7917in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Переменная</span></p>
+</td>
+<td style="vertical-align:middle; width:5.0833in; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_In_Table_Header"><span class="f_In_Table_Header">Примечания</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ID долга</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.id%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ID клиента</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.ext_id%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес КА (исх.)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.bank_out_address%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес Клиента (Банка)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank.address%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес регистрации должника</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%address.typ_reg%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Адрес суда</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%law_court.address%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ffffff;">Балл № 1</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.mark1%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Кастомизированное поле: может отсутствовать или иметь другое название (см. <a href="score.htm" class="topiclink">Скоринговые баллы</a>).</span><span class="f_In_Table" style="background-color: #ebf2de;">&nbsp;Определять по column_spec id=529(только если есть запись в column_spec и для нее заполнено поле user_name, иначе не выводится!)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ffffff;">Балл № 2</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.mark2%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Кастомизированное поле: может отсутствовать или иметь другое название(см. <a href="score.htm" class="topiclink">Скоринговые баллы</a>).</span><span class="f_In_Table" style="background-color: #ebf2de;">&nbsp;Определять по column_spec id=530(только если есть запись в column_spec и для нее заполнено поле user_name, иначе не выводится!)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ffffff;">Балл № 3</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.mark3%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Кастомизированное поле: может отсутствовать или иметь другое название(см. <a href="score.htm" class="topiclink">Скоринговые баллы</a>).</span><span class="f_In_Table" style="background-color: #ebf2de;">&nbsp;Определять по column_spec id=576(только если есть запись в column_spec и для нее заполнено поле user_name, иначе не выводится!)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table" style="background-color: #ffffff;">Балл № 4</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.mark4%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Кастомизированное поле: может отсутствовать или иметь другое название(см. <a href="score.htm" class="topiclink">Скоринговые баллы</a>).</span><span class="f_In_Table" style="background-color: #ebf2de;">&nbsp;Определять по column_spec id=577(только если есть запись в column_spec и для нее заполнено поле user_name, иначе не выводится!)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Банк</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.bank_name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Банк (SMS)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.bank_name_sms%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Банк (исх.)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.bank_out_name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Валюта</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.cur_name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная дата обещания</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_prom_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная дата платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_calc_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная причина отказа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_reason_refusal%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная причина частичной оплаты</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_reason_partial_payment%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная сумма обещания</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_prom_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенная сумма платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_calc_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенное имя акции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_stock%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария. Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенное ФИО</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_contact_fio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Введенный новый номер должника</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%enter_new_phone%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах для автоматического комментария.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата актуальности остатка</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.debt_exp_dt%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата ближайшего платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_planned_payment.date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата выдачи кредита</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.credit_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата выхода на просрочку</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.start_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата заключения</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%dg_start_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата начала акции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%discount.start_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата обещания</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">debt_promise.prom_date</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата окончания акции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%discount.finish_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата начала работы</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%portfolio.real_load_dt%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата окончания работы</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%portfolio.end_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата последнего неподтвержденного платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_calc.claim_pay_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата последнего платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.last_pay%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата расчета</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.debt_dt%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата рождения</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.birth_date%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Дата следующего платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.next_pay%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Договор</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.contract%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Единовременный штраф</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.fine_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Имя акции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%discount.name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Имя должника</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.i%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Имя и отчество оператора</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.operatorIO%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ИНН</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.inn%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Информация о договоре (портфеля)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%portfolio.contract_info%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Исходящий номер филиала</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%filial_sms_number%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Кол-во долгов</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.debt_cnt%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Количество платежей по долгу</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_calc.conf_cnt%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">КПП</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.kpp%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Крайний срок погашения</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.deadline%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Лицевой счет</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.account%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Моб. оператора</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.operator_mob%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Моб. телефон</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%phone.number%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Название продукта</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Наименование суда</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%law_court.name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Начальный долг</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.start_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Основной долг</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.basic_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Остаток к погашению</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.debt_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Остаток основного долга</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.total_rest%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отчество должника</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.o%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Пени</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.peni_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Пени по %</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.peni_percent%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Пени по ОД</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.peni_basic_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Полное ФИО</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.full_fio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Портфель</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.portfolio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Портфель (исх.)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.portfolio_out%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Проценты</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.percent_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Раб. телефон оператора</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.operator_work%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Размер кредита</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.total_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Регион</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.region%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты БИК</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.bik%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты ИНН</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.inn%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты Корреспондентский счет</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.k_account%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты КПП</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.kpp%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты Наименование банка</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.br_name%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты Получатель</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.recipient%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты Расчетный счет</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.r_account%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Реквизиты Юридический адрес банка</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank_requisites.br_address%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Данная переменная будет подставляться в текст смс, только если у долга заполнена ссылка на банковские реквизиты.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Срок кредита в днях</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.dpd%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Ссылка</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%discount.link%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма минимального платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.min_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма обеспечения</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%pp_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах SMS залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма обеспечения</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%dg_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах SMS поручителю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма обещания</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_promise.prom_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма оплаты по акции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_discount.pay_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Доступно только при использовании функционала акций.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма остатка на счете заемщика</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.sum_on_bank_account%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма платежей по долгу</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_calc.conf_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма последнего неподтвержденного платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_calc.claim_pay_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма последнего платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.last_pay_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Сумма следующего платежа</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.next_pay_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Текущая дата</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%sysdate%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон КА (исх.)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.bank_out_phone%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Телефон Клиента (Банка)</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%bank.phone%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 1</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_1%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 2</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_2%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 3</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_3%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 4</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_4%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 5</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_5%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 6</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_6%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 7</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_7%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 8</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_8%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 9</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_9%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 10</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_10%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 11</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_11%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа дата 12</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.dt_value_12%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 1</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_1%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 2</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_2%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 3</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_3%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 4</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_4%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 5</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_5%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 6</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_6%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 7</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_7%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 8</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_8%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 9</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_9%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа строка 10</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.string_value_10%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 1</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_1%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 2</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_2%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 3</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_3%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 4</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_4%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 5</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_5%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 6</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_6%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 7</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_7%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 8</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_8%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 9</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_9%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 10</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_10%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 11</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_11%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 12</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_12%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 13</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_13%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Техническое поле типа число 14</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt_detail.number_value_14%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Настраиваемое поле</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Тип продукта</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.typ%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Фактическая просрочка</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.fact_dpd%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Фамилия должника</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.f%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Отсутствует в шаблонах SMS поручителю и залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ФИО/Название</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%person.fio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ФИО / Название залогодателя</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%pp_fio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах SMS залогодателю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ФИО / Название поручителя</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%dg_fio%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Только в шаблонах SMS поручителю.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">ФИО оператора</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%debt.operator%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Штрафные санкции</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%penalty%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:3.3125in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">Штрафы</span></p>
+</td>
+<td style="vertical-align:top; width:2.7917in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">%penalty_sum%</span></p>
+</td>
+<td style="vertical-align:top; width:5.0833in; height:0.0417in; padding:0; border:solid thin #000000;"><p class="p_In_Table"><span class="f_In_Table">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','pole_tegs_zoom50.png','hm.src1','pole_tegs.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','pole_tegs_1_zoom50.png','hm.src1','pole_tegs_1.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

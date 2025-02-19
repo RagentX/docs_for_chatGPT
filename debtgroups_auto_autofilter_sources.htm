@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Настройка источников данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Настройка источников данных</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="utils.htm">Утилиты</a> &gt; <a href="debtorgroups.htm">Группы должников</a> &gt; <a href="debtgroups_auto.htm">Автогруппы</a> &gt; <a href="debtgroups_auto_autofilter_work.htm">Автофильтры</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Настройка источников данных</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtgroups_auto_autofilter_visual_constructor.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="debtgroups_auto_autofilter_work.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtgroups_auto_autofilter_check.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <p id="switchtoggles"><a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections">Show/Hide Hidden Text</a></p>
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Источником данных для автофильтров может быть любая таблица или представление базы данных.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Единственное условие состоит в том, что в представлении должен присутствовать столбец, указывающий на колонку debt.id - идентификатор для выборки данных. В качестве debt.id может быть выбрана любая колонка из набора данных.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для доступа к источникам данных нажмите кнопку </span><span class="f_Кнопка">Источники</span><span class="f_BodyText"> в форме <a href="debtgroups_form.htm" class="topiclink">Группы долгов</a> на вкладке <a href="debtgroups_form_autogroups.htm" class="topiclink">Автогруппы</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Откроется форма для работы с источниками данных. Она состоит из двух окон. В левой части формы расположено окно для работы со списком источников, а в правой части – окно для работы с полями выбранного источника.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="form" class="hmanchor"></a><span class="f_heading6">Форма Источники данных</span></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:4.7708in;height:2.5000in" href="form_groupdept_addsource.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_groupdept_addsource_zoom50" style="border:none;width:4.7708in;height:2.5000in" src="form_groupdept_addsource_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><span class="f_BodyText">Источники данных хранятся в таблице AUTO_FILTER_SRC. Для задания текста заголовков при настройке условий фильтров используется таблица AUTO_FILTER_SRC_FIELDS. Заголовки могут быть загружены из описаний колонок представлений из служебных таблиц базы данных.</span></p>
+<p class="p_Greytoggle"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Добавление источника</a></span></p>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BodyText"><span class="f_BodyText">Для добавления источника:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку </span><img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/><span class="f_ListNumber">, относящуюся к списку источников данных, или произведите <a href="debtgroups_auto_autofilter_sources.htm#import" class="topiclink">импорт источника данных</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Откроется форма для добавления источника данных. Заполните следующие поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Название</span><span class="f_ListBullet2"> — вводится название существующей таблицы или представления в базе данных. Если ввести название несуществующей таблицы – в дальнейшем невозможно будет загрузить ее поля. Поле обязательно для заполнения.</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Объект группы</span><span class="f_ListBullet2"> — выберите объект группы. Поле обязательно для заполнения.</span><span class="f_ListBullet2" style="background-color: #ebf2de;">&nbsp;Настройка списка объектов групп: в технической константе&nbsp;<a href="constants_constlist_technical.htm#groupdebtobjectforgroup" class="topiclink">GroupDebtObjectForGroup</a>&nbsp;перечислить идентификаторы соответствующих терминов словаря № 117.</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Примечание</span><span class="f_ListBullet2"> — в свободной форме.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:1.7500in;height:1.3438in" href="form_groupdept_addsource_add.png"><img id="TOGGLE0186A3" class="image-toggle" alt="form_groupdept_addsource_add_zoom50" style="border:none;width:1.7500in;height:1.3438in" src="form_groupdept_addsource_add_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите </span><span class="f_Кнопка">OK</span><span class="f_ListNumber">. Окно закроется. В форме <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a> появится новая строка в списке добавленных источников. Строка будет активна. В правой части окна список полей будет пуст. </span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Переходите к <a href="debtgroups_auto_autofilter_sources.htm#set_polya" class="topiclink">загрузке и редактированию полей источника</a>.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><a name="set_polya" class="hmanchor"></a><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Настройка полей источника</a></span></p>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BodyText"><span class="f_BodyText">Для настройки полей источника:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a> и выберите источник.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку  <img alt="btn_downloadallfields" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_downloadallfields.png"/> </span><span class="f_Кнопка">Загрузить все поля</span><span class="f_ListNumber">. Если список полей указанного источника не пуст, появится окно с предложение очистить предыдущие поля. Вы можете либо очистить, либо не очищать поля.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">После этого вы можете настроить список полей с помощью кнопок удаления и редактирования, относящихся к списку полей.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Для редактирования поля: выберите нужное поле и нажмите кнопку </span><img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/><span class="f_ListNumber">, относящуюся к списку полей. Откроется <a href="debtgroups_auto_autofilter_sources.htm#form_pole" class="topiclink">форма редактирования поля</a>, в которой вы можете изменить все параметры поля, назначить поле специальным полем debt.id - идентификатором для выборки данных, а также использовать SQL-запрос для указанного поля. По окончании редактирования поля нажмите </span><span class="f_Кнопка">OK</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Для удаления одного или нескольких полей выделите их с помощью мыши, затем нажмите кнопку </span><img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/><span class="f_ListNumber">, относящуюся к списку полей в форме <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a>. Подтвердите удаление.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">После настройки полей источника есть возможность переименовать его. Вы можете выбрать название другой таблицы базы данных и добавить некоторые ее поля в ваш источник, повторив действия с п. 2 (без очистки предыдущих полей). Затем вы можете задать источнику любое название и произвести его <a href="debtgroups_auto_autofilter_sources.htm#export" class="topiclink">экспорт</a>.</span></p><p class="p_BodyText"><a name="form_pole" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:2.2813in;height:1.9167in" href="form_groupdept_addsource_pole.png"><img id="TOGGLE0186A5" class="image-toggle" alt="form_groupdept_addsource_pole_zoom50" style="border:none;width:2.2813in;height:1.9167in" src="form_groupdept_addsource_pole_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Редактирование источника</a></span></p>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BodyText"><span class="f_BodyText">Для редактирования источника данных:</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_ListNumber">1.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a> и выберите источник.</span></td></tr></table></div><div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_ListNumber">2.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Нажмите кнопку  </span><img alt="btn_edit_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_edit_i.png"/><span class="f_ListNumber">, относящуюся к списку источников. Откроется форма редактирования источника.</span></td></tr></table></div><div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_ListNumber">3.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Измените значения ее полей и нажмите </span><span class="f_Кнопка">OK</span><span class="f_ListNumber">.</span></td></tr></table></div><p class="p_Normal"><a class="imagetogglelink" style="margin:0;width:1.7500in;height:1.3438in" href="form_groupdept_addsource_edit.png"><img id="TOGGLE0186A7" class="image-toggle" alt="form_groupdept_addsource_edit_zoom50" style="border:none;width:1.7500in;height:1.3438in" src="form_groupdept_addsource_edit_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Удаление источника </a></span></p>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BodyText"><span class="f_BodyText">Для удаления источника данных:</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_BodyText">1.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a> и выберите источник.</span></td></tr></table></div><div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_ListNumber">2.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Нажмите кнопку </span><img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/><span class="f_ListNumber">, относящуюся к списку источников.</span></td></tr></table></div><div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: 1.32;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2500in"><span class="f_ListNumber">3.</span></td><td style="border:none;padding:0"><span class="f_ListNumber">Введите подтверждение.</span></td></tr></table></div></td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><a name="export" class="hmanchor"></a><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Экспорт источника данных</a></span></p>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Выберите источник с помощью курсора мыши.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber"><a href="debtgroups_auto_autofilter_sources.htm#set_polya" class="topiclink">Настройте поля источника</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку </span><img alt="btn_sourceexport" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_sourceexport.png"/><span class="f_Кнопка"> Экспорт в XML</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Откроется стандартное окно сохранения файла. Выберите путь и задайте имя для сохраняемого файла и нажмите </span><span class="f_Кнопка">Сохранить</span><span class="f_ListNumber"> (</span><span class="f_Кнопка">Save</span><span class="f_ListNumber">).</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Greytoggle"><a name="import" class="hmanchor"></a><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="Кликните чтобы развернуть или свернуть описание" title="Кликните чтобы развернуть или свернуть описание" style="margin:0;width:0.0938in;height:0.0938in;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Greytoggle"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" title="Кликните чтобы развернуть или свернуть описание" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Импорт источника данных</a></span></p>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: justify; text-indent: 0.2500in; line-height: 1.32; padding: 0 0 0 0; margin: 0.0521in 0 0.0417in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Войдите в форму <a href="debtgroups_auto_autofilter_sources.htm#form" class="topiclink">Источники данных</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку <img alt="btn_sourceimport" style="margin:0;width:0.2708in;height:0.2604in;border:none" src="btn_sourceimport.png"/></span><span class="f_BodyText"> </span><span class="f_Кнопка">Импорт из XML</span><span class="f_ListNumber">.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Откроется стандартное окно выбора файла. Выберите файл источника и нажмите </span><span class="f_Кнопка">Открыть</span><span class="f_ListNumber"> (</span><span class="f_Кнопка">Open</span><span class="f_ListNumber">).</span></p></td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_groupdept_addsource_zoom50.png','hm.src1','form_groupdept_addsource.png');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','form_groupdept_addsource_add_zoom50.png','hm.src1','form_groupdept_addsource_add.png');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5','hm.type','picture','hm.state','0','hm.src0','form_groupdept_addsource_pole_zoom50.png','hm.src1','form_groupdept_addsource_pole.png');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7','hm.type','picture','hm.state','0','hm.src0','form_groupdept_addsource_edit_zoom50.png','hm.src1','form_groupdept_addsource_edit.png');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

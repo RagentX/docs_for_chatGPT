@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Загрузка данных в базу данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Загрузка данных о статусах долгов в базу данных</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="work_places.htm">Рабочие места</a> &gt; <a href="debtors.htm">Список должников</a> &gt; <a href="debtors_loaddata.htm">Применение утилит загрузки данных</a> &gt; <a href="debtstatus.htm">Утилита изменения статуса долга</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Загрузка данных о статусах долгов в базу данных</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="debtstatus_checkdata_colors.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="debtstatus.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="debtstatus_loadtodb_errorprocessed.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Для загрузки данных в БД выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме <a href="debtstatus_form.htm#pictureform_loadstatus" class="topiclink">Утилита изменения статуса долга</a> нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">Сохранить в БД</span><span class="f_ListNumber">. После этого кнопки </span><span class="f_ListNumber" style="font-weight: bold;">Проверить</span><span class="f_ListNumber">, </span><span class="f_ListNumber" style="font-weight: bold;">Сохранить в БД</span><span class="f_ListNumber"> и </span><span class="f_ListNumber" style="font-weight: bold;">Отменить</span><span class="f_ListNumber">, а также возможность редактирования вручную ячеек таблицы будут недоступны. В процессе загрузки данных в нижней строке формы будет отображаться тип операции (загрузка данных), текущие данные о проценте выполнения работы, директория и имя файла.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">При наличии изменений в таблице перед загрузкой автоматически проводится повторная проверка данных в таблице согласно разделу <a href="debtstatus_checkdata.htm" class="topiclink">Проверка данных</a>. По результатам проверки: </span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если в таблице отсутствуют записи, не содержащие критических ошибок, будет выдано сообщение: &quot;Загрузка данных отменена из-за отсутствия записей, которые могут быть загружены в БД&quot;;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если в таблице имеются ошибочные записи, будет выдан запрос на формирование файла ошибочных записей. Если требуется сформировать файл, нажмите </span><span class="f_ListBullet2" style="font-weight: bold;">Yes</span><span class="f_ListBullet2">. В этом случае будет автоматически сформирован файл в формате MS Excel, содержащий ошибочные записи. В процессе формирования <a href="debtstatus_loadtodb_errorfile.htm" class="topiclink">файла с ошибочными записями</a> в нижней строке формы будет отображаться тип операции (формирование файла ошибочных записей) и текущие данные о проценте выполнения работы. По окончании формирования файла будет выдано информационное сообщение с указанием директории и имени файла с ошибочными записями. Нажмите кнопку </span><span class="f_ListBullet2" style="font-weight: bold;">ОК</span><span class="f_ListBullet2">, чтобы закрыть его;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">если в таблице имеются и корректные, и ошибочные записи, перед загрузкой будет выдан запрос: &quot;Внимание: имеются записи (&lt;количество ошибочных записей&gt; из &lt;общее количество записей&gt;), которые не могут быть загружены в БД. Сформировать файл ошибочных записей?&quot;. При положительном ответе (кнопка </span><span class="f_ListBullet2" style="font-weight: bold;">Yes</span><span class="f_ListBullet2">) будет сформирован файл MS Excel с ошибочными записями. По окончании формирования файла будет выдано сообщение: &quot;Ошибочные записи сохранены в файле &lt;директория и имя файла&gt;&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">При наличии записей с некритическими ошибками (ФИО должника не соответствует ФИО для найденного долга) в процессе загрузки данных осуществляется диалог с пользователем, который принимает решение о загрузке или отказе от загрузки для нестандартных записей (см. <a href="debtstatus_loadtodb_errorprocessed.htm" class="topiclink">Обработка записей с некритическими ошибками</a>).</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">В ходе загрузки данных выполняется корректировка следующей информации в БД:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">о долгах (кредитах) в таблице debt;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">о задачах на обзвон для операторов в таблице work_task;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">о статусе долга в таблице ms_hard_status.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">По окончании загрузки данных будет выдано сообщение о количестве успешно загруженных записей: &quot;Успешно загружено &lt;количество записей&gt; записей&quot;. Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">, чтобы закрыть сообщение. Кнопка </span><span class="f_ListNumber" style="font-weight: bold;">Открыть файл</span><span class="f_ListNumber"> вновь станет доступной, а кнопки </span><span class="f_ListNumber" style="font-weight: bold;">Проверить</span><span class="f_ListNumber">, </span><span class="f_ListNumber" style="font-weight: bold;">Сохранить в БД</span><span class="f_ListNumber"> и </span><span class="f_ListNumber" style="font-weight: bold;">Отменить</span><span class="f_ListNumber"> — недоступны.</span></p><p class="p_BodyText"><span class="f_BodyText">По окончании загрузки в БД записей, не содержащих ошибок, можно вернуться к ошибочным записям. После удаления из файла первого столбца (причины ошибок) он может быть использован в качестве исходного файла MS Excel для утилиты изменения статуса долга.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Настройка связей столбцов формата с таблицами БД</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Настройка связей столбцов формата с таблицами БД</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="utils.htm">Утилиты</a> &gt; <a href="utils_loadtemplates.htm">Настройка шаблонов загрузки данных</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Настройка связей столбцов формата с таблицами БД</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="utils_loadtemplates_excel_cols.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="utils_loadtemplates.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="utils_loadtemplates_excel_copy.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Связь столбца формата с таблицами БД определяет, в какие поля таблиц БД будут загружаться данные из этого столбца. Если данные из столбца формата должны загружаться в определенный столбец определенной таблицы БД, то для него создается одна связь с этой таблицей и столбцом БД. Если же ячейки в каком-либо столбце формата содержат два или более элементов данных, разделенных разделителями, то для каждого элемента данных необходимо создать отдельную связь. Связи должны находиться в том же порядке, что и элементы в ячейках столбца.</span></p>
+<p class="p_BodyText"><img alt="пример_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17e5f533.png"/><span class="f_Emphasis"> </span><span class="f_Кнопкакурсив">Пример</span><span class="f_Emphasis">. Столбец </span><span class="f_Кнопкакурсив">Паспортные данные</span><span class="f_Emphasis"> может содержать данные в формате &quot;&lt;серия&gt;, &lt;номер&gt;, &lt;кем выдан&gt;&quot; (например, &quot;45 97, 176081, выдан 09.02.1999 5ОМ З РУВД УВД ЦАО&quot;). В результате преобразования столбец будет разбит на три столбца: &quot;&lt;серия&gt;&quot;, &quot;&lt;номер&gt;&quot;, &quot;&lt;кем выдан&gt;&quot; (&quot;45 97&quot;, &quot;176081&quot;, &quot;выдан 09.02.1999 5ОМ З РУВД УВД ЦАО&quot;). </span></p>
+<p class="p_BodyText"><span class="f_Emphasis">В этом случае в списке связей необходимо создать три связи, чтобы серия, номер и информация о выдаче загружались в соответствующие поля таблицы БД. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для того чтобы настроить связь столбца формата с полями таблиц БД, выполните следующие действия:</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">В форме </span><span class="f_ListNumber"><a href="utils_loadtemplates_excel_form.htm" class="topiclink">Настройка шаблонов загрузки</a></span><span class="f_ListNumber"> выберите нужный формат в списке.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">В списке столбцов выберите тот, для которого требуется настроить связи.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Нажмите кнопку </span><img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>, относящуюся к списку связей с таблицами БД.</p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">В открывшейся форме заполните поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Название таблицы</span><span class="f_ListBullet2"> — таблица БД. Список доступных таблиц зависит от <a href="utils_loadtemplates_excel_types.htm" class="topiclink">типа формата</a>. Поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Название столбца</span><span class="f_ListBullet2"> — название столбца (поля) в таблице БД, в который будут загружаться данные. Поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Тип адреса</span><span class="f_ListBullet2">/</span><span class="f_ListBullet2" style="font-weight: bold;">Тип телефона</span><span class="f_ListBullet2"> — если выбрана таблица &quot;Адреса&quot; или &quot;Телефоны&quot;, необходимо указать значение, которое определяет тип адреса (регистрации, фактический, рабочий или дополнительный) или телефона (мобильный, домашний, рабочий или дополнительный) и принадлежность адресов или телефонов персоне, поручителю или залогодателю. Поле обязательно для заполнения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2" style="font-weight: bold;">Неполный адрес</span><span class="f_ListBullet2"> — данный флаг становится доступен, если выбрана таблица &quot;Адреса&quot; и столбец &quot;Город&quot;. Флаг является признаком неполной обработки адреса.</span></p><p class="p_BodyText"><span class="f_BodyText">Если данный флаг установлен, то при преобразовании данных элементы неполного адреса будут обрабатываться без диалога с пользователем по стандартному алгоритму преобразования данных.</span></p>
+<p class="p_BodyText"><a name="fulladdress" class="hmanchor"></a><span class="f_BodyText">Полные адреса при <a href="utils_loaddata_convert.htm" class="topiclink">преобразовании</a> данных обрабатываются по особому алгоритму, который обеспечивает:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">идентификацию элементов адреса по соответствующим признакам независимо от порядка следования элементов, наличия или отсутствия разделителей для пустых элементов;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">проверку наличия указанной в составе адреса области (АО, края, республики, города с особым статусом) в справочнике населенных пунктов РФ (KLADR). Если область (АО, Аобл, края, республики, города с особым статусом) отсутствует в справочнике, указанное в записи значение игнорируется;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">проверку наличия и единственности указанного в составе адреса района в KLADR (с учетом области). При отсутствии или не единственном значении района в справочнике указанное в записи значение игнорируется;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">представление в нижней строке экрана процентного соотношения преобразованных непустых адресов к их общему количеству;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">диалог с пользователем по нестандартным адресам.</span></p><p class="p_BodyText"><span class="f_BodyText">Адрес считается нестандартным в следующих случаях:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">число элементов адреса превышает заданное в формате;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">не идентифицирован город;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">не идентифицирована улица, дом или квартира в городе;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">не все элементы адреса в записи опознаны;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">число элементов адреса меньше заданного в формате;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">число элементов неполного адреса без разбивки столбцов меньше минимально допустимого значения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">в неполном адресе без разбивки не найден почтовый индекс;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">число элементов неполного адреса без разбивки столбцов, не считая индекса, меньше минимально допустимого значения;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">в адресе отсутствует признак реквизита город, улица, дом, квартира или корпус.</span></p><p class="p_BodyText"><span class="f_BodyText">В ходе диалога пользователь может уточнить тексты преобразованных элементов адреса.</span></p>
+<p><a name="pictureform_loadsettings_xls_addbind" class="hmanchor"></a><a class="imagetogglelink" style="margin:0;width:1.6563in;height:1.6250in" href="form_loadsettings_xls_addbind.png"><img id="TOGGLE0186A1" class="image-toggle" alt="form_loadsettings_xls_addbind_zoom50" style="border:none;width:1.6563in;height:1.6250in" src="form_loadsettings_xls_addbind_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Нажмите кнопку </span><span class="f_ListNumber" style="font-weight: bold;">ОК</span><span class="f_ListNumber">. Связь будет добавлена в список.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">При необходимости повторите шаги 3-5, чтобы добавить все связи для выбранного столбца.</span></p><p class="p_BodyText"><span class="f_BodyText">Для того чтобы удалить выбранную связь из списка, нажмите кнопку <img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/> и подтвердите удаление в диалоговом окне.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Для перемещения выбранной связи в списке на одну позицию вниз или вверх нажмите соответственно кнопку <img alt="btn_down_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_down_i.png"/> или <img alt="btn_up_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_up_i.png"/>.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','form_loadsettings_xls_addbind_zoom50.png','hm.src1','form_loadsettings_xls_addbind.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>

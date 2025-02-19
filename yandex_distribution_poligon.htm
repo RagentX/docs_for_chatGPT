@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Настройка автораспределения по многоугольникам</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />   
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden; 
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #idcontent { position:relative }                                               
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}      
+      #switchtoggles { text-align: right; padding: 0 5px 0 0; font-size: 90%; margin: 0; }  
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+
+   </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; position:relative }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Настройка автораспределения по многоугольникам</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(background-topic-header.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="functions.htm">Функциональные возможности</a> &gt; <a href="yandex.htm">Интеграция с сервисом Яндекс.Карты</a> &gt; <a href="yandex_distribution.htm">Автораспределение по карте</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Настройка автораспределения по многоугольникам</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="yandex_distribution.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="yandex_distribution.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="yandex_distribution_poligon_exec.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p class="p_heading6" style="page-break-after: avoid;"><span class="f_heading6">Форма для настройки автораспределения по многоугольникам</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Форма включает в себя две области:</span></p>
+<p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Область с картой для построения многоугольника;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Форма со списком операторов для автораспределения по многоугольникам.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:4.9167in;height:2.7083in" href="yandex_27.png"><img id="TOGGLE0186A1" class="image-toggle" alt="yandex_27_zoom50" style="border:none;width:4.9167in;height:2.7083in" src="yandex_27_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><img alt="примечание_white" style="margin:0;width:0.1458in;height:0.1979in;border:none" src="hmfile_hash_17d6ccb8.png"/><span class="f_BodyText"> </span><span class="f_Кнопкакурсив">Примечание</span><span class="f_Emphasis">. На показанном изображении была нажата кнопка <img alt="btn_pin" style="margin:0;width:0.2708in;height:0.2604in;border:none" src="btn_pin.png"/> </span><span class="f_Кнопкакурсив">Показать адреса на карте</span><span class="f_Emphasis"> для отображения адресов</span><span class="f_BodyText">.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="it_is_karta" class="hmanchor"></a><span class="f_heading6">Область с картой для построения многоугольника</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Область включает в себя следующие элементы:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0417in 0 0.0833in 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Кнопки раздела </span><span class="f_Кнопка">Рисование многоугольника</span><span class="f_ListBullet2">:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Добавить</span><span class="f_ListBullet3">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Удалить</span><span class="f_ListBullet3">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Завершение редактирования</span><span class="f_ListBullet3">;</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Сохранить многоугольник</span><span class="f_ListBullet3">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Кнопка раздела </span><span class="f_Кнопка">Геолокация</span><span class="f_ListBullet2">:</span></p><p class="p_ListBullet3" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.5000in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Сохранить результат</span><span class="f_ListBullet3">;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Карта;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_ListBullet2">Область, где отображаются числовые значения координат многоугольника после завершения его редактирования (координаты отображаются только после завершения редактирования многоугольника при его <a href="yandex_distribution_poligon.htm#set_poligon" class="topiclink">настройке</a>).</span></p><p class="p_heading6" style="page-break-after: avoid;"><a name="it_is_list" class="hmanchor"></a><span class="f_heading6">Форма со списком операторов для автораспределения по многоугольникам</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Разверните список операторов.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Используйте кнопки </span><img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/>, <img alt="btn_edit_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_edit_i.png"/> и <img alt="btn_delete_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_delete_i.png"/><span class="f_ListNumber"> для добавления, редактирования и удаления записи из списка операторов, для которых настроено автораспределение.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Кнопка </span><img alt="btn_update" style="margin:0;width:0.2708in;height:0.2604in;border:none" src="btn_update.png"/><span class="f_ListNumber"> &quot;Обновить&quot; используется для обновления информации, если другие пользователи Системы внесли изменения.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Кнопка </span><img alt="btn_pin" style="margin:0;width:0.2708in;height:0.2604in;border:none" src="btn_pin.png"/><span class="f_ListNumber"> &quot;Показать адреса на карте&quot; используется для отображения адресов на карте.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Флаг &quot;Отображать многоугольники&quot; - в случае его включения отображаются многоугольники.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">6.</span><span class="f_ListNumber">Флаг &quot;Отображать все адреса&quot; - если он включен, отображаются все адреса должников в соответствии с типизацией. Если флаг выключен, для каждого должника отображается только один адрес, имеющий тип &quot;Регистрация&quot;. Если у должника в базе имеется более одного адреса указанного типа, из них выбирается тот, что имеет наименьший идентификационный номер.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:3.8438in;height:1.9375in" href="yandex_28.png"><img id="TOGGLE0186A2" class="image-toggle" alt="yandex_28_zoom50" style="border:none;width:3.8438in;height:1.9375in" src="yandex_28_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading5" style="page-break-after: avoid;"><span class="f_heading5">Порядок действий для настройки автораспределения по многоугольнику</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Рекомендуется сначала <a href="yandex_distribution_poligon.htm#add_oper" class="topiclink">добавить оператора</a>, а затем для него <a href="yandex_distribution_poligon.htm#set_poligon" class="topiclink">настроить многоугольник</a>. Если вы хотите изменить многоугольник автораспределения для уже настроенного оператора, то выберите нужную строку в списке операторов и перейдите к <a href="yandex_distribution_poligon.htm#set_poligon" class="topiclink">настройке многоугольника</a>.</span></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="add_oper" class="hmanchor"></a><span class="f_heading6">Добавить оператора</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Разверните список операторов или используйте кнопки, относящиеся к настройке операторов на форме.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку </span><img alt="btn_add_i" style="margin:0;width:0.2604in;height:0.2604in;border:none" src="btn_add_i.png"/><span class="f_ListNumber">, относящуюся к настройке операторов.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Откроется форма добавления оператора.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Заполните поля:</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Мнемокод</span><span class="f_ListBullet2"> – идентификатор записи;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Пользователь</span><span class="f_ListBullet2"> – выберите пользователя, для которого настроена геолокация;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Порядок выполнения</span><span class="f_ListBullet2"> – приоритет;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Многоугольник</span><span class="f_ListBullet2"> – не заполняйте эту вкладку, на ней будут отражены координаты многоугольника после его настройки;</span></p><p class="p_ListBullet2" style="text-indent: 0; padding-left: 0.2396in; margin-left: 0.2500in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#000000;text-decoration:none;">&#183;</span><span class="f_Кнопка">Примечание</span><span class="f_ListBullet2"> – дополнительная информация.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">5.</span><span class="f_ListNumber">Нажмите OK. В созданной записи поле &quot;Многоугольник&quot; будет пусто.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:2.2500in;height:1.3333in" href="yandex_29.png"><img id="TOGGLE0186A3" class="image-toggle" alt="yandex_29_zoom50" style="border:none;width:2.2500in;height:1.3333in" src="yandex_29_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_heading6" style="page-break-after: avoid;"><a name="set_poligon" class="hmanchor"></a><span class="f_heading6">Настройка &nbsp;многоугольника автораспределения</span></p>
+<p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">1.</span><span class="f_ListNumber">Установите курсор на нужную запись в списке операторов (при необходимости). Дальнейшие действия осуществляются в <a href="yandex_distribution_poligon.htm#it_is_karta" class="topiclink">области, содержащей карту</a>.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">2.</span><span class="f_ListNumber">Нажмите кнопку &quot;Добавить&quot;, относящуюся к рисованию многоугольника.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">3.</span><span class="f_ListNumber">Создайте на карте многоугольник. Если результат вас не устраивает, нажмите кнопку &quot;Удалить&quot;, а затем &quot;Добавить&quot; и начните сначала. По окончании редактирования нажмите кнопку &quot;Завершить редактирование&quot;.</span></p><p class="p_ListNumber" style="text-indent: 0; padding-left: 0.2500in; margin-left: 0;"><span class="f_ListNumber" style="display:inline-block;width:0.2500in;margin-left:-0.2500in">4.</span><span class="f_ListNumber">Нажмите кнопку &quot;Сохранить многоугольник&quot;. Сохранный многоугольник будет добавлен в выбранную запись списка операторов.</span></p><p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:5.2292in;height:4.2813in" href="yandex_30.png"><img id="TOGGLE0186A4" class="image-toggle" alt="yandex_30_zoom50" style="border:none;width:5.2292in;height:4.2813in" src="yandex_30_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:5.2292in;height:4.2813in" href="yandex_31.png"><img id="TOGGLE0186A5" class="image-toggle" alt="yandex_31_zoom50" style="border:none;width:5.2292in;height:4.2813in" src="yandex_31_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+<p class="p_BodyText"><a class="imagetogglelink" style="margin:0;width:5.2292in;height:4.2813in" href="yandex_32.png"><img id="TOGGLE0186A6" class="image-toggle" alt="yandex_32_zoom50" style="border:none;width:5.2292in;height:4.2813in" src="yandex_32_zoom50.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+if (window.topicInitScriptAvailable) {
+function HMInitToggleStates() {
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','yandex_27_zoom50.png','hm.src1','yandex_27.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','yandex_28_zoom50.png','hm.src1','yandex_28.png');
+HMInitToggle('TOGGLE0186A3','hm.type','picture','hm.state','0','hm.src0','yandex_29_zoom50.png','hm.src1','yandex_29.png');
+HMInitToggle('TOGGLE0186A4','hm.type','picture','hm.state','0','hm.src0','yandex_30_zoom50.png','hm.src1','yandex_30.png');
+HMInitToggle('TOGGLE0186A5','hm.type','picture','hm.state','0','hm.src0','yandex_31_zoom50.png','hm.src1','yandex_31.png');
+HMInitToggle('TOGGLE0186A6','hm.type','picture','hm.state','0','hm.src0','yandex_32_zoom50.png','hm.src1','yandex_32.png');
+
+}
+var checkTimer=setTimeout("HMInitToggleStates()", 0);
+}
+</script>
+</body>
+</html>
